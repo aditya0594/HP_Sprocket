@@ -17,17 +17,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import base.ScreenBase;
+import org.testng.Assert;
 import utils.CommonUtils;
+
+import javax.lang.model.element.Name;
 
 public class LandingPageAndroid extends ScreenBase {
 
     private static
 
+
     String FIRSTNAME ="";
     String USERNAME = "";
     String PASSWORD = "";
-    String INUSERNAME ="";
+    String INEMAIL ="";
     String INUPASSWORD = "";
+    String EMAIL = "";
+
 
     String Month = "";
     String DAY = "";
@@ -35,9 +41,10 @@ public class LandingPageAndroid extends ScreenBase {
     public LandingPageAndroid() {
         try {
             Properties properties = CommonUtils.read_properties();
-            USERNAME = properties.getProperty("email");
+            FIRSTNAME = properties.getProperty("name");
+            EMAIL = properties.getProperty("email");
             PASSWORD = properties.getProperty("password");
-            INUSERNAME =(String) properties.get("invalidemail");
+            INEMAIL =(String) properties.get("invalidemail");
             INUPASSWORD =(String) properties.get("invalidpassword");
             FIRSTNAME = (String)properties.get("name");
             Month = (String) properties.get("Month");
@@ -49,8 +56,6 @@ public class LandingPageAndroid extends ScreenBase {
         }
     }
     By Login_btn = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.TextView[2]");
-
-
     By Login_email = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.EditText");
     By Login_password = By.id("com.kodak.steptouch:id/fragment_login_password");
     By submit_Login_btn = By.id("com.kodak.steptouch:id/fragment_login_do_login");
@@ -110,17 +115,72 @@ public class LandingPageAndroid extends ScreenBase {
     public void tap_on_ill1() {
     		driver.findElement(Ill_Btn).click();
     		}
+
+
     public boolean VerifyTapill() {
     	return driver.findElement(Ill_Btn).isDisplayed();
-    
-    }
-  
-    public void tapSignInOnLandingPage(){
 
-        //driver.findElement(Tap_on_signin_layout).click();
-        driver.findElement(Login_btn).click();
-        
     }
+
+    //hp sprocket
+    By Full_Name = By.id("com.hp.impulse.sprocket:id/editTextFullname");
+    By Email = By.id("com.hp.impulse.sprocket:id/editTextEmail");
+    By Password = By.id("com.hp.impulse.sprocket:id/editTextPassword");
+    By Sign_Up_Btn = By.id("com.hp.impulse.sprocket:id/createButton");
+    By Alert_OK_Btn = By.id("com.hp.impulse.sprocket:id/bt_ok");
+    By Password_Eye_btn = By.id("com.hp.impulse.sprocket:id/imageViewEye");
+    By Ill_Do_It_Later = By.id("com.hp.impulse.sprocket:id/illDoItLaterButton");
+    public void Sign_up(){
+        driver.findElement(Full_Name).sendKeys(FIRSTNAME);
+        driver.findElement(Email).sendKeys(EMAIL);
+        driver.findElement(Password).sendKeys(PASSWORD);
+        driver.findElement(Sign_Up_Btn).click();
+    }
+    public void verify_signup_disble_firstname(){
+        driver.findElement(Full_Name).sendKeys(" ");
+        driver.findElement(Email).sendKeys(EMAIL);
+        driver.findElement(Password).sendKeys(PASSWORD);
+        Assert.assertFalse((driver.findElement(Sign_Up_Btn)).isEnabled(), "OK button is disabled.");
+        System.out.println("OK button is disabled.");
+
+    }
+    public void verify_signup_disble_email(){
+        driver.findElement(Full_Name).sendKeys("aditya");
+        driver.findElement(Email).sendKeys(" ");
+        driver.findElement(Password).sendKeys(PASSWORD);
+        Assert.assertFalse((driver.findElement(Sign_Up_Btn)).isEnabled(), "OK button is disabled.");
+        System.out.println("OK button is disabled.");
+
+    }
+    public void verify_signup_disble_password(){
+        driver.findElement(Full_Name).sendKeys("aditya");
+        driver.findElement(Email).sendKeys(EMAIL);
+        driver.findElement(Password).sendKeys(" ");
+        Assert.assertFalse((driver.findElement(Sign_Up_Btn)).isEnabled(), "OK button is disabled.");
+        System.out.println("OK button is disabled.");
+
+    }
+    public void password_validation(){
+        driver.findElement(Full_Name).sendKeys("aditya");
+        driver.findElement(Email).sendKeys(EMAIL);
+        driver.findElement(Password).sendKeys(INUPASSWORD);
+        driver.findElement(Sign_Up_Btn).click();
+        Assert.assertTrue(driver.findElement(Alert_OK_Btn).isDisplayed());
+        driver.findElement(Alert_OK_Btn).click();
+        Assert.assertEquals("Password must include: At least 1 uppercase letter","Password must include: At least 1 uppercase letter");
+    }
+    public void password_eye_btn() throws InterruptedException {
+            driver.findElement(Password).sendKeys(PASSWORD);
+       String pas = driver.findElement(Password).getText();
+        System.out.println("Text of password" + pas);
+        driver.findElement(Password_Eye_btn).click();
+        Thread.sleep(2000);
+        String eyepas = driver.findElement(Password).getText();
+        System.out.println("Seen Password" + eyepas);
+
+    }
+
+
     public boolean VerifySignInButtonDash() {
     	 return driver.findElement(Login_btn).isDisplayed();
     	
@@ -141,7 +201,7 @@ public class LandingPageAndroid extends ScreenBase {
     }
     
     public void invalid_EnterNumberOrEmail() {
-        driver.findElement(Login_email).sendKeys(INUSERNAME);
+     //   driver.findElement(Login_email).sendKeys(INUSERNAME);
         
     }
     public void VerifyFieldvalidationEmail() {
@@ -300,7 +360,7 @@ public class LandingPageAndroid extends ScreenBase {
     }
     public void forget_passwordInvaild(){
         driver.findElement(ForgetPass).click();
-        driver.findElement(ForgetPassField).sendKeys(INUSERNAME);
+      //  driver.findElement(ForgetPassField).sendKeys(INUSERNAME);
         driver.findElement(ForgetPassSend).click();
     }
 

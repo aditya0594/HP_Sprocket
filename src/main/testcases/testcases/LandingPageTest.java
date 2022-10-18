@@ -1,33 +1,30 @@
 
 package testcases;
-import okhttp3.internal.Util;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import base.TestBase;
-import androidpageobjects.GalleryPageAndroid;
 import androidpageobjects.LandingPageAndroid;
 
 
 public class LandingPageTest extends TestBase {
 	
 	public LandingPageAndroid LandingPage = new LandingPageAndroid();
-    public GalleryPageAndroid galleryPage = new GalleryPageAndroid();
-    
 
-    @Test(priority = 1, enabled = false)
-    public void verify_Login_User_Inapp() throws InterruptedException {
 
-        System.out.println("Verify the Signin Button");
-        Thread.sleep(4000);
-        LandingPage.tapSignInOnLandingPage();
-        LandingPage.enterNumberOrEmail();
-        LandingPage.enterPassword();
-        LandingPage.VerifySignInButton();
-        LandingPage.tapSignInSubmit();
-        LandingPage.exitapp();
+    @Test(priority = 1, enabled = true)
+    public void Sign_up() throws InterruptedException {
+      //  LandingPage.Sign_up();
+        LandingPage.verify_signup_disble_firstname();
+      //  LandingPage.verify_signup_disble_email();
+       // LandingPage.verify_signup_disble_password();
+       // LandingPage.password_validation();
+        LandingPage.password_eye_btn();
 
     }
+
+
+
+
     @Test(priority = 2,enabled = false )
     public void verifyILL() {
     	System.out.println("Verify the functionality of the ill do it later");
@@ -41,7 +38,7 @@ public class LandingPageTest extends TestBase {
     	
         System.out.println("Verify the Sign in present button");
         Assert.assertTrue(LandingPage.VerifySignInButtonDash());
-        LandingPage.tapSignInOnLandingPage();
+        //LandingPage.tapSignInOnLandingPage();
         LandingPage.exitapp();
     }
     
@@ -51,8 +48,7 @@ public class LandingPageTest extends TestBase {
     public void verifyInvalidEmail() throws InterruptedException {
     	
         System.out.println("Verify the Invaild Email");
-        LandingPage.tapSignInOnLandingPage();
-        LandingPage.invalid_EnterNumberOrEmail();
+//        LandingPage.invalid_EnterNumberOrEmail();
         LandingPage.enterPassword();
         LandingPage.tapSignInSubmit();
         LandingPage.VerifyFieldvalidationEmail();
@@ -63,8 +59,7 @@ public class LandingPageTest extends TestBase {
     public void verifyInvalidPassword(){
     	
         System.out.println("Verify the Invaild Email");
-        LandingPage.tapSignInOnLandingPage();    
-        LandingPage.enterNumberOrEmail();
+//        LandingPage.enterNumberOrEmail();
         LandingPage.invalidEnterPassword();
         LandingPage.tapSignInSubmit();
         LandingPage.VerifyFieldvalidationPass();
@@ -87,7 +82,7 @@ public class LandingPageTest extends TestBase {
     public void verifySignupBt_Login(){
 
         System.out.println("Verify the Signup button on login page");
-        LandingPage.tapSignInOnLandingPage();
+       // LandingPage.tapSignInOnLandingPage();
         LandingPage.VerfySignupBtnLogin();
         LandingPage.SignupBtnLogin();
         LandingPage.exitapp();
@@ -97,7 +92,7 @@ public class LandingPageTest extends TestBase {
     public void VerifyForgetPassword() throws InterruptedException {
         System.out.println("Verify Forget password email send on email");
         Thread.sleep(3000);
-        LandingPage.tapSignInOnLandingPage();
+       // LandingPage.tapSignInOnLandingPage();
         Thread.sleep(3000);
         LandingPage.verify_forgetpasswordbtn();
         LandingPage.forget_password();
@@ -107,7 +102,7 @@ public class LandingPageTest extends TestBase {
     @Test(priority = 8, enabled = false )
     public void VerifyForgetPassword_invalidEmail(){
         System.out.println("Verify Forget password with invalid Email id ");
-        LandingPage.tapSignInOnLandingPage();
+      //  LandingPage.tapSignInOnLandingPage();
         LandingPage.forget_passwordInvaild();
         LandingPage.verify_Invalid_ForgetEmail();
         LandingPage.exitapp();

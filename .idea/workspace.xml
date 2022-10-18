@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ExtentReportListener/ExtentReporterNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/base/base/ScreenBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/base/base/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/AppConfigTags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/app/HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Setup of project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/app/HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +67,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GalleryPageTest">
+  <component name="RunManager" selected="TestNG.LandingPageTest.Sign_up">
     <configuration name="C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -144,6 +133,61 @@
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
       <option name="METHOD_NAME" value="verifyMainGallery" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="METHOD_NAME" value="Sign_up" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -233,15 +277,19 @@
     <list>
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
+      <item itemvalue="TestNG.LandingPageTest" />
+      <item itemvalue="TestNG.LandingPageTest.Sign_up" />
       <item itemvalue="TestNG.GalleryPageTest" />
       <item itemvalue="TestNG.GalleryPageTest.verifyMainGallery" />
       <item itemvalue="TestNG.C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
+        <item itemvalue="TestNG.C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" />
+        <item itemvalue="TestNG.LandingPageTest" />
         <item itemvalue="TestNG.GalleryPageTest" />
         <item itemvalue="TestNG.GalleryPageTest.verifyMainGallery" />
-        <item itemvalue="TestNG.C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666076221252</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup of project">
+      <created>1666092880518</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666092880518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +345,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="Setup of project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup of project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
