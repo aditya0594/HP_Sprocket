@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Setup of project">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Signup module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/base/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/base/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/app/HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/src/main/base",
-    "last_opened_file_path": "C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/app",
+    "last_opened_file_path": "C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/target",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -67,74 +64,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LandingPageTest.Sign_up">
-    <configuration name="C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.LandingPageTest.Get_Started_onboarding">
+    <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="JavaSE-1.8" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GalleryPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GalleryPageTest.verifyMainGallery" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
-      <option name="METHOD_NAME" value="verifyMainGallery" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -174,6 +113,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LandingPageTest.Get_Started_onboarding" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="METHOD_NAME" value="Get_Started_onboarding" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageTest.Ill_Do_it" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="METHOD_NAME" value="Ill_Do_it" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -188,6 +183,34 @@
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
       <option name="METHOD_NAME" value="Sign_up" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LandingPageTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="METHOD_NAME" value="login" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -277,19 +300,19 @@
     <list>
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
-      <item itemvalue="TestNG.LandingPageTest" />
+      <item itemvalue="TestNG.Classexecution" />
+      <item itemvalue="TestNG.LandingPageTest.Get_Started_onboarding" />
+      <item itemvalue="TestNG.LandingPageTest.Ill_Do_it" />
       <item itemvalue="TestNG.LandingPageTest.Sign_up" />
-      <item itemvalue="TestNG.GalleryPageTest" />
-      <item itemvalue="TestNG.GalleryPageTest.verifyMainGallery" />
-      <item itemvalue="TestNG.C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" />
+      <item itemvalue="TestNG.LandingPageTest.login" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LandingPageTest.Get_Started_onboarding" />
+        <item itemvalue="TestNG.LandingPageTest.login" />
+        <item itemvalue="TestNG.LandingPageTest.Ill_Do_it" />
         <item itemvalue="TestNG.LandingPageTest.Sign_up" />
-        <item itemvalue="TestNG.C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/testng.xml" />
         <item itemvalue="TestNG.LandingPageTest" />
-        <item itemvalue="TestNG.GalleryPageTest" />
-        <item itemvalue="TestNG.GalleryPageTest.verifyMainGallery" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666092880518</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Signup module">
+      <created>1666102106292</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666102106292</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +376,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="Setup of project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup of project" />
+    <MESSAGE value="Signup module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Signup module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
