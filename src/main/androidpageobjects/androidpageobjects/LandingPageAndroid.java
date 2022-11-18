@@ -18,6 +18,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import base.ScreenBase;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utils.CommonUtils;
 
@@ -83,6 +85,32 @@ public class LandingPageAndroid extends ScreenBase {
     By Check_Collection = By.id("com.hp.impulse.sprocket:id/cb_privacy_agree");
     By Check_Google_Analytics = By.id("com.hp.impulse.sprocket:id/cb_analytics_agree");
     By Continue_Button = By.id("com.hp.impulse.sprocket:id/bt_privacy_lets_go");
+
+    // Hamburger menu locators
+    By Hamburger_Menu = By.id("com.hp.impulse.sprocket:id/toolbar_icon");
+    //com.hp.impulse.sprocket:id/menu_icon_container
+    //com.hp.impulse.sprocket:id/menu_txt_item
+    By ham_Account_Setting = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.RelativeLayout[3]/android.widget.LinearLayout/android.widget.ListView[1]/android.widget.RelativeLayout[4]/android.widget.TextView");
+    By ham_Manage_printer = By.id("com.hp.impulse.sprocket:id/menu_txt_item");
+    By ham_App_Setting = By.id("com.hp.impulse.sprocket:id/menu_img_item");
+    By ham_How_To_help = By.id("com.hp.impulse.sprocket:id/menu_txt_item");
+    By ham_HP_icon = By.id("com.hp.impulse.sprocket:id/menu_icon_container");
+
+    // Account setting locators
+    By Account_username = By.id("com.hp.impulse.sprocket:id/user_name");
+
+    //delete account locators
+    By Delete_account_btn = By.id("com.hp.impulse.sprocket:id/img_delete");
+    By Cancel_account_bt = By.id("com.hp.impulse.sprocket:id/bt_cancel");
+    By Confirm_btn = By.id("com.hp.impulse.sprocket:id/bt_confirm_delete");
+    //com.hp.impulse.sprocket:id/tv_detail
+    By Content_delete_pop = By.id("com.hp.impulse.sprocket:id/tv_detail");
+
+    By Account_deleted_ok_btn = By.id("com.hp.impulse.sprocket:id/bt_ok");
+    By Account_deleted= By.id("com.hp.impulse.sprocket:id/tv_alert");
+
+
+
     public void Sign_up() {
         driver.findElement(Full_Name).sendKeys(FIRSTNAME);
         driver.findElement(Email).sendKeys(EMAIL);
@@ -91,7 +119,7 @@ public class LandingPageAndroid extends ScreenBase {
     }
 
     public void verify_signup_disble_firstname() {
-        driver.findElement(Full_Name).sendKeys(" ");
+       // driver.findElement(Full_Name).sendKeys(" ");
         driver.findElement(Email).sendKeys(EMAIL);
         driver.findElement(Password).sendKeys(PASSWORD);
         Assert.assertFalse((driver.findElement(Sign_Up_Btn)).isEnabled(), "OK button is disabled.");
@@ -194,23 +222,48 @@ public class LandingPageAndroid extends ScreenBase {
         String explore_sprocket = driver.findElement(Explore_Sprocket).getText();
         Assert.assertEquals(explore_sprocket, "explore sprocket");
         driver.findElement(Explore_Sprocket).click();
+
+
+    }
+    public void hamburger_Account_Setting() {
+        driver.findElement(Hamburger_Menu).click();
+        driver.findElement(ham_Account_Setting).click();
+    }
+    public void verify_account_name()
+    {
+        String account_setting_username = driver.findElement(Account_username).getText();
+        Assert.assertEquals(FIRSTNAME, account_setting_username);
+
+    }
+    public void delete_account(){
+        driver.findElement(Delete_account_btn).click();
+        driver.findElement(Cancel_account_bt).click();
+        Assert.assertTrue((driver.findElement(Delete_account_btn)).isEnabled(), "Delete is visible.");
+        driver.findElement(Delete_account_btn).click();
+        driver.findElement(Confirm_btn).click();
+        WebDriverWait w = new WebDriverWait(driver,3);
+        // presenceOfElementLocated condition
+        w.until(ExpectedConditions.presenceOfElementLocated (Account_deleted_ok_btn));
+        driver.findElement(Account_deleted_ok_btn).click();
+
+
     }
     public void get_started_screen() throws InterruptedException {
 
-        driver.findElement(Already_Acct).click();
-        driver.findElement(Login_email).sendKeys(EMAIL);
-        driver.findElement(Login_password).sendKeys(PASSWORD);
-        driver.findElement(Login_btn).click();
-        String my_sprocket = driver.findElement(My_sprocket).getText();
-        Assert.assertEquals(my_sprocket, "my sprocket");
-        String my_friend = driver.findElement(My_Friend).getText();
-        Assert.assertEquals(my_friend, "my friend's sprocket");
-        String explore_sprocket = driver.findElement(Explore_Sprocket).getText();
-        Assert.assertEquals(explore_sprocket, "explore sprocket");
-        driver.findElement(Explore_Sprocket).click();
-        Assert.assertTrue(driver.findElement(Get_started_image).isDisplayed());
-        String Get_Started_text = driver.findElement(Get_Start_Btn).getText();
-        Assert.assertEquals(Get_Started_text, "Get Started");
+       // driver.findElement(Already_Acct).click();
+       // driver.findElement(Login_email).sendKeys(EMAIL);
+       // driver.findElement(Login_password).sendKeys(PASSWORD);
+       // driver.findElement(Login_btn).click();
+        //String my_sprocket = driver.findElement(My_sprocket).getText();
+       // Assert.assertEquals(my_sprocket, "my sprocket");
+       // String my_friend = driver.findElement(My_Friend).getText();
+       // Assert.assertEquals(my_friend, "my friend's sprocket");
+       // String explore_sprocket = driver.findElement(Explore_Sprocket).getText();
+      //  Assert.assertEquals(explore_sprocket, "explore sprocket");
+       // driver.findElement(Explore_Sprocket).click();
+      //  Assert.assertTrue(driver.findElement(Get_started_image).isDisplayed());
+      //  String Get_Started_text = driver.findElement(Get_Start_Btn).getText();
+       // Assert.assertEquals(Get_Started_text, "Get Started");
         driver.findElement(Get_Start_Btn).click();
         driver.findElement(Check_Collection).click();
         driver.findElement(Check_Google_Analytics).click();
