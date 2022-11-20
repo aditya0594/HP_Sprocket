@@ -13,13 +13,16 @@ public class LandingPageTest extends TestBase {
 
     @Test(priority = 1, enabled = true)
     public void Sign_up() throws InterruptedException {
-       LandingPage.Sign_up();
-       //LandingPage.verify_signup_disble_firstname();
+
+      // LandingPage.verify_signup_disble_firstname();
        LandingPage.verify_signup_disble_email();
        LandingPage.verify_signup_disble_password();
        LandingPage.password_validation();
        LandingPage.password_eye_btn();
-       LandingPage.Already_have_acct();
+       LandingPage.Sign_up();
+       LandingPage.get_started_screen_signup();
+       LandingPage.hamburger_Account_Setting();
+       LandingPage.verify_account_name();
     }
     @Test(priority = 2, enabled = true)
     public void login() throws InterruptedException {
