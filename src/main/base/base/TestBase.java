@@ -17,7 +17,7 @@ import utils.Constants;
 public class TestBase {
 
     public static AppiumDriver driver;
-    public LandingPageAndroid LandingPage;
+    //public LandingPageAndroid LandingPage;
 
 
     @BeforeMethod
@@ -25,22 +25,13 @@ public class TestBase {
 
     	 //configuration items to change the look and feel
          //add content, manage tests etc
-
-        pageObjectConfig();
         System.out.println("Setup TestCase");
-
         CommonUtils utils = new CommonUtils();
-
         utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
         driver = utils.driver;
-       
         
     }
 
-    private void pageObjectConfig() {
-
-    }
-    
 //    @BeforeTest
 //    public void startapp() throws IOException {
 //    	pageObjectConfig();
@@ -51,10 +42,9 @@ public class TestBase {
 //        utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
 //        driver = utils.driver;
 //    }
-
 	@AfterMethod
 	public void Aftertest() {
-		
+        driver.resetApp();
 	}
 
 	@AfterSuite

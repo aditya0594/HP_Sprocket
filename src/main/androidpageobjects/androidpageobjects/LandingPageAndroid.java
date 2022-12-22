@@ -164,7 +164,8 @@ public class LandingPageAndroid extends ScreenBase {
 
     }
 
-    public void ill_do_later() {
+    public void ill_do_later() throws InterruptedException {
+        Thread.sleep(2000);
         driver.findElement(Ill_Do_It_Later).click();
         String my_sprocket = driver.findElement(My_sprocket).getText();
         Assert.assertEquals(my_sprocket, "my sprocket");
@@ -187,7 +188,7 @@ public class LandingPageAndroid extends ScreenBase {
     }
     public void login_invalid_password() {
 
-        //driver.findElement(Already_Acct).click();
+        driver.findElement(Already_Acct).click();
         driver.findElement(Login_email).sendKeys(EMAIL);
         driver.findElement(Login_password).sendKeys(INUPASSWORD);
         driver.findElement(Login_btn).click();
@@ -212,28 +213,52 @@ public class LandingPageAndroid extends ScreenBase {
 
 
     }
+
+    public void Normal_login() {
+        //waitForElement(Already_Acct);
+        driver.findElement(Already_Acct).click();
+        driver.findElement(Login_email).sendKeys(EMAIL);
+        driver.findElement(Login_password).sendKeys(PASSWORD);
+        driver.findElement(Login_btn).click();
+        driver.findElement(Explore_Sprocket).click();
+    }
     public void hamburger_Account_Setting() {
+        waitForElement(Hamburger_Menu);
         driver.findElement(Hamburger_Menu).click();
+        waitForElement(ham_Account_Setting);
         driver.findElement(ham_Account_Setting).click();
     }
-    public void verify_account_name()
-    {
+    public void verify_account_name() throws InterruptedException {
         String account_setting_username = driver.findElement(Account_username).getText();
         Assert.assertEquals(FIRSTNAME, account_setting_username);
+        Thread.sleep(3000);
+        //driver.closeApp();
 
     }
-    public void delete_account(){
+    public void delete_account() throws InterruptedException {
+        waitForElement(Delete_account_btn);
         driver.findElement(Delete_account_btn).click();
         driver.findElement(Cancel_account_bt).click();
-        Assert.assertTrue((driver.findElement(Delete_account_btn)).isEnabled(), "Delete is visible.");
         driver.findElement(Delete_account_btn).click();
         driver.findElement(Confirm_btn).click();
+        Thread.sleep(5000);
+       // waitForElement(Account_deleted_ok_btn);
+       // Thread.sleep(5000);
+       // Assert.assertTrue((driver.findElement(Account_deleted_ok_btn)).isEnabled(), "Popup is visible.");
+        //driver.findElement(Account_deleted_ok_btn).click();
         //WebDriverWait w = new WebDriverWait(driver,3);
         // presenceOfElementLocated condition
       //  w.until(ExpectedConditions.presenceOfElementLocated (Account_deleted_ok_btn));
        // driver.findElement(Account_deleted_ok_btn).click();
-        waitForElement(Account_deleted_ok_btn);
 
+
+    }
+    public void delete_account_ok_popup() throws InterruptedException {
+        Thread.sleep(5000);
+        waitForElement(Account_deleted_ok_btn);
+        Thread.sleep(5000);
+        Assert.assertTrue((driver.findElement(Account_deleted_ok_btn)).isEnabled(), "Popup is visible.");
+        driver.findElement(Account_deleted_ok_btn).click();
     }
     public void get_started_screen() throws InterruptedException {
 
@@ -279,6 +304,7 @@ public class LandingPageAndroid extends ScreenBase {
         String Continue_text = driver.findElement(Continue_Button).getText();
         Assert.assertEquals(Continue_text, "Continue");
         driver.findElement(Continue_Button).click();
+        Thread.sleep(5000);
 
     }
 
@@ -286,6 +312,7 @@ public class LandingPageAndroid extends ScreenBase {
     
     
     public void exit_app() {
+
         driver.closeApp();
     }
 }
