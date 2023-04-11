@@ -165,7 +165,7 @@ public class LandingPageAndroid extends ScreenBase {
     }
 
     public void ill_do_later() throws InterruptedException {
-        Thread.sleep(2000);
+        waitForElement(Ill_Do_It_Later);
         driver.findElement(Ill_Do_It_Later).click();
         String my_sprocket = driver.findElement(My_sprocket).getText();
         Assert.assertEquals(my_sprocket, "my sprocket");
@@ -290,6 +290,8 @@ public class LandingPageAndroid extends ScreenBase {
        // driver.findElement(Login_email).sendKeys(EMAIL);
        // driver.findElement(Login_password).sendKeys(PASSWORD);
        // driver.findElement(Login_btn).click();
+        waitForElement(Ill_Do_It_Later);
+        driver.findElement(Ill_Do_It_Later).click();
         String my_sprocket = driver.findElement(My_sprocket).getText();
        Assert.assertEquals(my_sprocket, "my sprocket");
        String my_friend = driver.findElement(My_Friend).getText();Assert.assertEquals(my_friend, "my friend's sprocket");String explore_sprocket = driver.findElement(Explore_Sprocket).getText();

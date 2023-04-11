@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="22-12-2022 commit">
-      <change afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/base/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/base/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/src/main/base&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/drive eclipse project/eclipse backup/hobolinkmobilebrowser-master@877a57e8512&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
@@ -69,28 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GalleryPageTest (1)">
-    <configuration name="C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.GalleryPageTest.Collage_multi_Img_functionality">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -98,35 +81,9 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GalleryPageTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -166,7 +123,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GalleryPageTest.Gallery_verify" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleryPageTest.Collage_Image_functionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -179,7 +136,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
-      <option name="METHOD_NAME" value="Gallery_verify" />
+      <option name="METHOD_NAME" value="Collage_Image_functionality" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -194,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleryPageTest.Collage_multi_Img_functionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -206,10 +163,116 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
-      <option name="METHOD_NAME" value="Sign_up" />
+      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+      <option name="METHOD_NAME" value="Collage_multi_Img_functionality" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GalleryPageTest.Gallery_verify_image" type="TestNG" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+      <option name="METHOD_NAME" value="Gallery_verify_image" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GalleryPageTest.Verify_Select_Clear" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+      <option name="METHOD_NAME" value="Verify_Select_Clear" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GalleryPageTest.Verify_Select_Functionality" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+      <option name="METHOD_NAME" value="Verify_Select_Functionality" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite " type="TestNG">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -295,22 +358,24 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_image" />
+      <item itemvalue="TestNG.TestSuite " />
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
+      <item itemvalue="TestNG.GalleryPageTest.Collage_Image_functionality" />
+      <item itemvalue="TestNG.GalleryPageTest.Collage_multi_Img_functionality" />
+      <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Clear" />
+      <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Functionality" />
       <item itemvalue="TestNG.GalleryPageTest" />
-      <item itemvalue="TestNG.GalleryPageTest (1)" />
-      <item itemvalue="TestNG.GalleryPageTest.Gallery_verify" />
-      <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
-      <item itemvalue="TestNG.LandingPageTest.Sign_up" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GalleryPageTest (1)" />
-        <item itemvalue="TestNG.GalleryPageTest.Gallery_verify" />
-        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
+        <item itemvalue="TestNG.GalleryPageTest.Collage_multi_Img_functionality" />
+        <item itemvalue="TestNG.GalleryPageTest.Collage_Image_functionality" />
+        <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Clear" />
         <item itemvalue="TestNG.GalleryPageTest" />
-        <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
+        <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Functionality" />
       </list>
     </recent_temporary>
   </component>

@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import io.appium.java_client.AppiumDriver;
 import utils.CommonUtils;
@@ -52,7 +53,12 @@ public class TestBase {
 		driver.quit();
 		
 	}
-    public By waitForElement(By element) {
+    @AfterTest
+    public void closeApp() {
+        driver.closeApp();
+
+    }
+    public static By waitForElement(By element) {
         WebDriverWait w = new WebDriverWait(driver,3);
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
         return element;

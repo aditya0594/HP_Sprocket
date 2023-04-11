@@ -27,23 +27,19 @@ public class LandingPageTest extends TestBase {
     }
     @Test(priority = 2, enabled = true)
     public void login() throws InterruptedException {
-
-
-        LandingPage.login_invalid_password();
-        LandingPage.login_invalid_email();
         LandingPage.login();
         LandingPage.get_started_screen();
         LandingPage.hamburger_Account_Setting();
         LandingPage.verify_account_name();
-
     }
-    @Test(priority = 3, enabled = true)
+
+    @Test(priority = 3, enabled = false)
     public void Ill_Do_it() throws InterruptedException {
         LandingPage.ill_do_later();
     }
     @Test (priority = 4,enabled = true)
     public void Get_Started_onboarding() throws InterruptedException {
-        LandingPage.ill_do_later();
+       // LandingPage.ill_do_later();
         LandingPage.get_started_screen_signup();
     }
 

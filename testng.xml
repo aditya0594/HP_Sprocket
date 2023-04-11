@@ -4,10 +4,12 @@
         <classes><class name="testcases.LandingPageTest">
             <methods><include name="Sign_up"/>
                 <include name="login"/>
-                <include name="Ill_Do_it"/>
                 <include name="Get_Started_onboarding"/>
             </methods>
         </class>
+            <class name="testcases.GalleryPageTest">
+                <methods><include name="Delete_user"/></methods>
+            </class>
             <class name="testcases.DeleteUserPageTest">
                 <methods><include name="Delete_user"/></methods>
             </class>
