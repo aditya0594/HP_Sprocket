@@ -1,7 +1,14 @@
 package base;
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import androidpageobjects.LandingPageAndroid;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.touch.offset.PointOption;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -47,38 +54,45 @@ public class TestBase {
 	public void Aftertest() {
         driver.resetApp();
 	}
-
 	@AfterSuite
 	public void tearDown() {
 		driver.quit();
-		
 	}
     @AfterTest
     public void closeApp() {
         driver.closeApp();
-
     }
     public static By waitForElement(By element) {
         WebDriverWait w = new WebDriverWait(driver,3);
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
         return element;
     }
-    /*
-     * Scroll page down 250 pixel
-     */
     public void scrollDown() {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,250)");
     }
-
-    /*
-     * Scroll page down pixel
-     *
-     * @Param pixel pixel to scroll down
-     */
     public void scrollDown(String pixel) {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0," + pixel + ")", "");
     }
-
+    public static void Tap_screen (int startx, int starty) throws InterruptedException {
+       // int startx = 568;
+       // int starty = 2140 ;
+        TouchAction action = new  TouchAction(driver);
+        action.tap(PointOption.point(startx, starty))
+                .release()
+                .perform();
+    }
+    public static void captureScreenShots(String Feature_name)throws IOException {
+        String folder_name = "screenshot";
+        File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //Date format fot screenshot file name
+        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy__hh_mm_ssaa");
+        //create dir with given folder name
+        new File(folder_name).mkdir();
+        //Setting file name
+        String file_name= Feature_name + df.format(new Date())+".png";
+        //coppy screenshot file into screenshot folder.
+        FileUtils.copyFile(f, new File(folder_name + "/" + file_name));
+    }
 }

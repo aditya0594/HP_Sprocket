@@ -4,10 +4,16 @@ import base.TestBase;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.touch.offset.PointOption;
+import org.apache.tools.ant.types.selectors.SelectSelector;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.touch.TouchActions;
 import org.testng.Assert;
 
+import java.io.IOException;
 import java.sql.Driver;
 import java.util.List;
 
@@ -25,7 +31,12 @@ public class GalleryPageAndroid extends TestBase {
     static By Collage_btn = By.xpath("//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView");
     static By Collage_image_ver = By.xpath("//android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView");
     static By popup_ok = By.id("com.hp.impulse.sprocket:id/button_positive");
-    static By Next_btn = By.id("com.hp.impulse.sprocket:id/button_positive");
+    static By Swipe_to_insta= By.xpath("//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[14]/android.widget.ImageView[1]");
+    static By Next_for_print_preview= By.xpath("//*[@id=\"screenshotContainer\"]/div/div/div/div/div/div[96]");
+    static By Collage_layout_1 = By.xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ImageView");
+    static By Collage_layout_2 = By.xpath("//android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ImageView");
+    static By Collage_layout_3 = By.xpath("//android.widget.FrameLayout[3]/android.widget.LinearLayout/android.widget.ImageView");
+    static By Collage_layout_4 = By.xpath("//android.widget.FrameLayout[4]/android.widget.LinearLayout/android.widget.ImageView");
     public static void gallery_album() {
         driver.findElement(AlbumContainer).click();
         String album_Name = driver.findElement(AllPhotos_click).getText();
@@ -79,15 +90,45 @@ public class GalleryPageAndroid extends TestBase {
         System.out.println(" Collage tab image verify  " + Collage_btn_text);
         Assert.assertEquals("Collage", Collage_btn_text);
     }
-    public static void Verify_Collage_Multi_Image() {
+    public static void Verify_Collage_Multi_Image() throws InterruptedException, IOException {
         driver.findElement(Select_func).click();
         driver.findElement(Allphotos1).click();
         driver.findElement(Allphotos2).click();
         driver.findElement(Allphotos3).click();
-        driver.findElement(Next_btn).click();
+        Tap_screen(568, 2140);
+       waitForElement(Collage_image_ver);
+       driver.findElement(Collage_image_ver).click();
+        driver.findElement(popup_ok).click();
+        if(driver.findElement(Collage_layout_2).isDisplayed()){
+            System.out.println("Collage layout is visible");
+            captureScreenShots("layout is visible");
+        }
+        else {
+            System.out.println("Collage layout is NOT visible");
+        }
+    }
+    public static void Verify_Collage_Multi_layout_switch_Image() throws InterruptedException, IOException {
+        driver.findElement(Select_func).click();
+        driver.findElement(Allphotos1).click();
+        driver.findElement(Allphotos2).click();
+        driver.findElement(Allphotos3).click();
+        Tap_screen(568, 2140);
+        waitForElement(Collage_image_ver);
         driver.findElement(Collage_image_ver).click();
         driver.findElement(popup_ok).click();
+        driver.findElement(Collage_layout_1).click();
+        //Thread.sleep(2000);
+        captureScreenShots("First Layout is displayed");
+        Thread.sleep(2000);
+        driver.findElement(Collage_layout_2).click();
+        Thread.sleep(2000);
+        captureScreenShots("Second Layout is displayed");
+        driver.findElement(Collage_layout_3).click();
+        Thread.sleep(2000);
+        captureScreenShots("Third Layout is displayed");
+        driver.findElement(Collage_layout_4).click();
+        Thread.sleep(2000);
+        captureScreenShots("Fourth Layout is displayed");
+
     }
-
-
 }

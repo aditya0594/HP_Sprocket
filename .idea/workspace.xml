@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="22-12-2022 commit">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Gallery page commit">
+      <change afterPath="$PROJECT_DIR$/screenshot/First Layout is displayed13-Apr-2023__03_36_43pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/Fourth Layout is displayed13-Apr-2023__03_36_58pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/Second Layout is displayed13-Apr-2023__03_36_49pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/Third Layout is displayed13-Apr-2023__03_36_53pm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.20.03.2022v2.84.2.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/base/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/base/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +56,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/src/main/base&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/drive eclipse project/eclipse backup/hobolinkmobilebrowser-master@877a57e8512&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/app&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -63,17 +66,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aditya Pawar\IdeaProjects\HP_Sprocket\app" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\app" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\main" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\resources\app" />
-      <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GalleryPageTest.Collage_multi_Img_functionality">
+  <component name="RunManager" selected="TestNG.GalleryPageTest">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -123,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GalleryPageTest.Collage_Image_functionality" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleryPageTest.Collage_Img_functionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -136,7 +139,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
-      <option name="METHOD_NAME" value="Collage_Image_functionality" />
+      <option name="METHOD_NAME" value="Collage_Img_functionality" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -207,7 +210,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GalleryPageTest.Verify_Select_Clear" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleryPageTest.Verify_Collage_Multi_layoutswitch_Image" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -220,7 +223,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
-      <option name="METHOD_NAME" value="Verify_Select_Clear" />
+      <option name="METHOD_NAME" value="Verify_Collage_Multi_layoutswitch_Image" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -235,7 +238,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GalleryPageTest.Verify_Select_Functionality" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GalleryPageTest.Verify_Select_Clear" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -248,7 +251,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
-      <option name="METHOD_NAME" value="Verify_Select_Functionality" />
+      <option name="METHOD_NAME" value="Verify_Select_Clear" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -363,19 +366,19 @@
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
-      <item itemvalue="TestNG.GalleryPageTest.Collage_Image_functionality" />
+      <item itemvalue="TestNG.GalleryPageTest.Collage_Img_functionality" />
+      <item itemvalue="TestNG.GalleryPageTest.Verify_Collage_Multi_layoutswitch_Image" />
       <item itemvalue="TestNG.GalleryPageTest.Collage_multi_Img_functionality" />
       <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Clear" />
-      <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Functionality" />
       <item itemvalue="TestNG.GalleryPageTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GalleryPageTest.Collage_multi_Img_functionality" />
-        <item itemvalue="TestNG.GalleryPageTest.Collage_Image_functionality" />
-        <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Clear" />
         <item itemvalue="TestNG.GalleryPageTest" />
-        <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Functionality" />
+        <item itemvalue="TestNG.GalleryPageTest.Verify_Collage_Multi_layoutswitch_Image" />
+        <item itemvalue="TestNG.GalleryPageTest.Collage_multi_Img_functionality" />
+        <item itemvalue="TestNG.GalleryPageTest.Verify_Select_Clear" />
+        <item itemvalue="TestNG.GalleryPageTest.Collage_Img_functionality" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671709413843</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Gallery page commit">
+      <created>1681222750493</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681222750493</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +447,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/Master_2_branch" />
                       </list>
                     </value>
                   </entry>
@@ -457,7 +467,8 @@
     <MESSAGE value="signup loagin completed" />
     <MESSAGE value="signup login completed" />
     <MESSAGE value="22-12-2022 commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="22-12-2022 commit" />
+    <MESSAGE value="Gallery page commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gallery page commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

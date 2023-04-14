@@ -26,9 +26,10 @@ public class CommonUtils {
 		path = System.getProperty("user.dir");
     	caps.setCapability("platformName", "Android");
 		caps.setCapability("deviceName", "Galaxy s22 FE");
-		caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk");
+		caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.20.03.2022v2.84.2.apk");
         //path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk"
 		caps.setCapability("autoGrantPermissions", "true");
+        caps.setCapability("fullReset", "true");
         caps.setCapability("udid","RZ8NA1P2S8D");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
         driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);

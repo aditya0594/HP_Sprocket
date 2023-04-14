@@ -6,6 +6,8 @@ import androidpageobjects.LandingPageAndroid;
 import base.TestBase;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class GalleryPageTest extends TestBase {
     LandingPageAndroid LandingPage = new LandingPageAndroid();
     DeletePageAndroid DeletePage = new DeletePageAndroid();
@@ -44,9 +46,14 @@ public class GalleryPageTest extends TestBase {
         GalleryPageAndroid.Verify_Collage_Image();
     }
     @Test(priority =7, enabled = true)
-    public void Collage_multi_Img_functionality() throws InterruptedException {
+    public void Collage_multi_Img_functionality() throws InterruptedException, IOException {
         LandingPage.get_started_screen_signup();
         GalleryPageAndroid.Verify_Collage_Multi_Image();
+    }
+    @Test(priority =8, enabled = true)
+    public void Verify_Collage_Multi_layoutswitch_Image() throws InterruptedException, IOException {
+        LandingPage.get_started_screen_signup();
+        GalleryPageAndroid.Verify_Collage_Multi_layout_switch_Image();
     }
 
 }
