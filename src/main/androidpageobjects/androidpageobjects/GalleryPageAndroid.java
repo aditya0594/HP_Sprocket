@@ -1,4 +1,4 @@
-package androidpageobjects;
+package androidpageobjects.androidpageobjects;
 
 import base.TestBase;
 import io.appium.java_client.AppiumDriver;
@@ -46,6 +46,7 @@ public class GalleryPageAndroid extends TestBase {
     public static void gallery_images() {
         driver.findElement(AlbumContainer).click();
         driver.findElement(AllPhotos_click).click();
+        waitForElement(Allphotos1);
         driver.findElement(Allphotos1).isDisplayed();
 
     }

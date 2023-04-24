@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Gallery page commit">
-      <change afterPath="$PROJECT_DIR$/screenshot/First Layout is displayed13-Apr-2023__03_36_43pm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot/Fourth Layout is displayed13-Apr-2023__03_36_58pm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot/Second Layout is displayed13-Apr-2023__03_36_49pm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot/Third Layout is displayed13-Apr-2023__03_36_53pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/First Layout is displayed24-Apr-2023__04_14_05pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/Fourth Layout is displayed24-Apr-2023__04_14_21pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/Second Layout is displayed24-Apr-2023__04_14_12pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot/Third Layout is displayed24-Apr-2023__04_14_16pm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.20.03.2022v2.84.2.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/base/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/base/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/DeleteUserPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/DeleteUserPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,21 +54,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Aditya Pawar/git/HP_Sprocket/HP_Sprocket/src/main/base&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/app&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Aditya Pawar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aditya Pawar\IdeaProjects\HP_Sprocket\app" />
@@ -447,13 +447,28 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Master_2_branch" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
