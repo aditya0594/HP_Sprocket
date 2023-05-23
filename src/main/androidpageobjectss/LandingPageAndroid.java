@@ -1,4 +1,4 @@
-package androidpageobjects;
+package androidpageobjectss;
 
 import static org.testng.Assert.assertEquals;
 
@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 
-import base.ScreenBase;
+import baseClass.ScreenBase;
 import org.testng.Assert;
 import utils.CommonUtils;
 
@@ -309,7 +309,57 @@ public class LandingPageAndroid extends ScreenBase {
         Thread.sleep(5000);
 
     }
+    public void get_started_screen_After_signup() throws InterruptedException {
 
+        // driver.findElement(Already_Acct).click();
+        // driver.findElement(Login_email).sendKeys(EMAIL);
+        // driver.findElement(Login_password).sendKeys(PASSWORD);
+        // driver.findElement(Login_btn).click();
+        //waitForElement(Ill_Do_It_Later);
+        // driver.findElement(Ill_Do_It_Later).click();
+        String my_sprocket = driver.findElement(My_sprocket).getText();
+        Assert.assertEquals(my_sprocket, "my sprocket");
+        String my_friend = driver.findElement(My_Friend).getText();Assert.assertEquals(my_friend, "my friend's sprocket");String explore_sprocket = driver.findElement(Explore_Sprocket).getText();
+        Assert.assertEquals(explore_sprocket, "explore sprocket");
+        driver.findElement(Explore_Sprocket).click();
+        Assert.assertTrue(driver.findElement(Get_started_image).isDisplayed());
+        String Get_Started_text = driver.findElement(Get_Start_Btn).getText();
+        Assert.assertEquals(Get_Started_text, "Get Started");
+        driver.findElement(Get_Start_Btn).click();
+        driver.findElement(Check_Collection).click();
+        driver.findElement(Check_Google_Analytics).click();
+        String Continue_text = driver.findElement(Continue_Button).getText();
+        Assert.assertEquals(Continue_text, "Continue");
+        driver.findElement(Continue_Button).click();
+        Thread.sleep(5000);
+
+    }
+
+    public void get_started_screen_AfterIlldoit_signup() throws InterruptedException {
+
+        // driver.findElement(Already_Acct).click();
+        // driver.findElement(Login_email).sendKeys(EMAIL);
+        // driver.findElement(Login_password).sendKeys(PASSWORD);
+        // driver.findElement(Login_btn).click();
+        waitForElement(Ill_Do_It_Later);
+         driver.findElement(Ill_Do_It_Later).click();
+        String my_sprocket = driver.findElement(My_sprocket).getText();
+        Assert.assertEquals(my_sprocket, "my sprocket");
+        String my_friend = driver.findElement(My_Friend).getText();Assert.assertEquals(my_friend, "my friend's sprocket");String explore_sprocket = driver.findElement(Explore_Sprocket).getText();
+        Assert.assertEquals(explore_sprocket, "explore sprocket");
+        driver.findElement(Explore_Sprocket).click();
+        Assert.assertTrue(driver.findElement(Get_started_image).isDisplayed());
+        String Get_Started_text = driver.findElement(Get_Start_Btn).getText();
+        Assert.assertEquals(Get_Started_text, "Get Started");
+        driver.findElement(Get_Start_Btn).click();
+        driver.findElement(Check_Collection).click();
+        driver.findElement(Check_Google_Analytics).click();
+        String Continue_text = driver.findElement(Continue_Button).getText();
+        Assert.assertEquals(Continue_text, "Continue");
+        driver.findElement(Continue_Button).click();
+        Thread.sleep(5000);
+
+    }
 
     
     

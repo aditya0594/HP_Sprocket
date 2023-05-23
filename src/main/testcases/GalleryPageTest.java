@@ -1,9 +1,9 @@
 package testcases;
 
-import androidpageobjects.DeletePageAndroid;
-import androidpageobjects.androidpageobjects.GalleryPageAndroid;
-import androidpageobjects.LandingPageAndroid;
-import base.TestBase;
+import androidpageobjectss.DeletePageAndroid;
+import androidpageobjectss.GalleryPageAndroid;
+import androidpageobjectss.LandingPageAndroid;
+import baseClass.TestBase;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -14,6 +14,7 @@ public class GalleryPageTest extends TestBase {
 
 
     @Test(priority = 1, enabled = true)
+
     public void Gallery_verify_album() throws InterruptedException {
         LandingPage.get_started_screen_signup();
         GalleryPageAndroid.gallery_album();
@@ -23,7 +24,6 @@ public class GalleryPageTest extends TestBase {
     public void Gallery_verify_image() throws InterruptedException {
         LandingPage.get_started_screen_signup();
         GalleryPageAndroid.gallery_images();
-
     }
     @Test(priority = 3, enabled = true)
     public void Verify_Select_Functionality() throws InterruptedException {

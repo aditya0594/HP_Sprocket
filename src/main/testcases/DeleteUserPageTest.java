@@ -1,10 +1,8 @@
 package testcases;
 
-import androidpageobjects.DeletePageAndroid;
-import androidpageobjects.LandingPageAndroid;
-import base.TestBase;
-import org.openqa.selenium.By;
-import org.testng.Assert;
+import androidpageobjectss.DeletePageAndroid;
+import androidpageobjectss.LandingPageAndroid;
+import baseClass.TestBase;
 import org.testng.annotations.Test;
 
 public class DeleteUserPageTest extends TestBase {

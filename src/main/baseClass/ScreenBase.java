@@ -1,6 +1,6 @@
-package base;
+package baseClass;
 
-import static base.TestBase.driver;
+import static baseClass.TestBase.driver;
 
 public class ScreenBase extends TestBase {
 

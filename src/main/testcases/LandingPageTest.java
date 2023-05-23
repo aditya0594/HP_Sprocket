@@ -1,16 +1,13 @@
 
 package testcases;
-import org.testng.Assert;
 import org.testng.annotations.Test;
-import base.TestBase;
-import androidpageobjects.LandingPageAndroid;
+import baseClass.TestBase;
+import androidpageobjectss.LandingPageAndroid;
 
 
 public class LandingPageTest extends TestBase {
 	
 	public LandingPageAndroid LandingPage = new LandingPageAndroid();
-
-
     @Test(priority = 1, enabled = true)
     public void Sign_up() throws InterruptedException {
       // LandingPage.verify_signup_disble_firstname();
@@ -19,7 +16,7 @@ public class LandingPageTest extends TestBase {
        LandingPage.password_validation();
        LandingPage.password_eye_btn();
        LandingPage.Sign_up();
-       LandingPage.get_started_screen_signup();
+       LandingPage.get_started_screen_After_signup();
        LandingPage.hamburger_Account_Setting();
        LandingPage.verify_account_name();
 
@@ -40,7 +37,7 @@ public class LandingPageTest extends TestBase {
     @Test (priority = 4,enabled = true)
     public void Get_Started_onboarding() throws InterruptedException {
        // LandingPage.ill_do_later();
-        LandingPage.get_started_screen_signup();
+        LandingPage.get_started_screen_AfterIlldoit_signup();
     }
 
 }

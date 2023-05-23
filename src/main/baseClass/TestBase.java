@@ -1,11 +1,10 @@
-package base;
+package baseClass;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import androidpageobjects.LandingPageAndroid;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
@@ -37,7 +36,7 @@ public class TestBase {
         CommonUtils utils = new CommonUtils();
         utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
         driver = utils.driver;
-        
+
     }
 
 //    @BeforeTest
@@ -51,16 +50,16 @@ public class TestBase {
 //        driver = utils.driver;
 //    }
 	@AfterMethod
-	public void Aftertest() {
-        driver.resetApp();
+	public void Aftertest() throws InterruptedException {
+        driver.quit();
 	}
 	@AfterSuite
 	public void tearDown() {
-		driver.quit();
+       // driver.quit();
 	}
     @AfterTest
-    public void closeApp() {
-        driver.closeApp();
+    public void closeApp(){
+        //driver.closeApp();
     }
     public static By waitForElement(By element) {
         WebDriverWait w = new WebDriverWait(driver,3);
