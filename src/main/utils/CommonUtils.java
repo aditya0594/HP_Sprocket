@@ -28,7 +28,7 @@ public class CommonUtils {
 		path = System.getProperty("user.dir");
     	caps.setCapability("platformName", "Android");
 		caps.setCapability("deviceName", "Galaxy s22 FE");
-		caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.20.03.2022v2.84.2.apk");
+		caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk");
         //path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk"
 		caps.setCapability("autoGrantPermissions", "true");
         caps.setCapability("fullReset", "true");

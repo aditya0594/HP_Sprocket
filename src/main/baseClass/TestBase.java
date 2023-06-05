@@ -66,6 +66,7 @@ public class TestBase {
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
         return element;
     }
+
     public void scrollDown() {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,250)");
@@ -82,6 +83,17 @@ public class TestBase {
                 .release()
                 .perform();
     }
+    public static void Slide_touch (int startx, int starty, int endX, int endY ) throws InterruptedException {
+        // int startx = 568;
+        // int starty = 2140 ;
+        TouchAction action = new  TouchAction(driver);
+        action.press(PointOption.point(startx, starty))
+                .waitAction()
+                .moveTo(PointOption.point(endX, endY))
+                .release()
+                .perform();
+    }
+
     public static void captureScreenShots(String Feature_name)throws IOException {
         String folder_name = "screenshot";
         File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

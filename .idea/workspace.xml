@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Gallery page commit 24-04-2023">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="arranged commit 23-05-2023">
+      <change afterPath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/testcases/testcases/ConnectivityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/First Layout is displayed24-Apr-2023__04_14_05pm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/Fourth Layout is displayed24-Apr-2023__04_14_21pm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/Second Layout is displayed24-Apr-2023__04_14_12pm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshot/Third Layout is displayed24-Apr-2023__04_14_16pm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/DeletePageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/DeletePageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjects/androidpageobjects/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/base/base/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/base/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/DeleteUserPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/DeleteUserPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/AppConfigTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/AppConfigTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +54,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/app&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -83,28 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml">
-    <configuration name="C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ConnectivityTest.Verify_600_AP">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -127,20 +96,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteUserPageTest.Delete_user" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ConnectivityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.testcases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserPageTest" />
-      <option name="METHOD_NAME" value="Delete_user" />
+      <option name="PACKAGE_NAME" value="testcases.testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.testcases.ConnectivityTest" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectivityTest.Verify_600_AP" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases.testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.testcases.ConnectivityTest" />
+      <option name="METHOD_NAME" value="Verify_600_AP" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -155,21 +151,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GalleryPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ConnectivityTest.Verify_600_STA_printer_Close_button" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcases.*" />
+          <option name="PATTERN" value="testcases.testcases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+      <option name="PACKAGE_NAME" value="testcases.testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.testcases.ConnectivityTest" />
+      <option name="METHOD_NAME" value="Verify_600_STA_printer_Close_button" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectivityTest.Verify_600_STA_printer_Connection_loop_for_5" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases.testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.testcases.ConnectivityTest" />
+      <option name="METHOD_NAME" value="Verify_600_STA_printer_Connection_loop_for_5" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectivityTest.Verify_Search_for_printer_not_found" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases.testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.testcases.ConnectivityTest" />
+      <option name="METHOD_NAME" value="Verify_Search_for_printer_not_found" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -196,61 +249,6 @@
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
       <option name="METHOD_NAME" value="Gallery_verify_image" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LandingPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
-      <option name="METHOD_NAME" value="Sign_up" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -365,19 +363,19 @@
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
-      <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
-      <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
-      <item itemvalue="TestNG.LandingPageTest" />
-      <item itemvalue="TestNG.LandingPageTest.Sign_up" />
-      <item itemvalue="TestNG.GalleryPageTest" />
+      <item itemvalue="TestNG.ConnectivityTest.Verify_600_AP" />
+      <item itemvalue="TestNG.ConnectivityTest" />
+      <item itemvalue="TestNG.ConnectivityTest.Verify_600_STA_printer_Close_button" />
+      <item itemvalue="TestNG.ConnectivityTest.Verify_600_STA_printer_Connection_loop_for_5" />
+      <item itemvalue="TestNG.ConnectivityTest.Verify_Search_for_printer_not_found" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
-        <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
-        <item itemvalue="TestNG.LandingPageTest" />
-        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
-        <item itemvalue="TestNG.GalleryPageTest" />
+        <item itemvalue="TestNG.ConnectivityTest.Verify_600_AP" />
+        <item itemvalue="TestNG.ConnectivityTest.Verify_Search_for_printer_not_found" />
+        <item itemvalue="TestNG.ConnectivityTest.Verify_600_STA_printer_Connection_loop_for_5" />
+        <item itemvalue="TestNG.ConnectivityTest" />
+        <item itemvalue="TestNG.ConnectivityTest.Verify_600_STA_printer_Close_button" />
       </list>
     </recent_temporary>
   </component>
@@ -439,7 +437,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682339156474</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="arranged commit 23-05-2023">
+      <created>1684850359340</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684850359340</updated>
+    </task>
+    <task id="LOCAL-00009" summary="arranged commit 23-05-2023">
+      <created>1684850456303</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684850456303</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -490,7 +502,8 @@
     <MESSAGE value="22-12-2022 commit" />
     <MESSAGE value="Gallery page commit" />
     <MESSAGE value="Gallery page commit 24-04-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gallery page commit 24-04-2023" />
+    <MESSAGE value="arranged commit 23-05-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="arranged commit 23-05-2023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -499,12 +512,13 @@
           <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="Connectivity" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
