@@ -8,6 +8,7 @@ import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -234,8 +235,16 @@ public class ConnectivityPageAndroid extends TestBase {
     static By Hotspot_Mode_popup_title_4_AP= By.id("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[4]");
     static By Hotspot_Mode_popup_title_5_AP= By.id("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[5]");
     static By Hoptspot_Mode_Open_setting_btn = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.Button");
-    static By Native_Wifi_List = By.id("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[5]");
-
+    static By Native_Wifi_List = By.className("android.widget.RelativeLayout");
+    static By printer_sign = By.xpath("\t\n" +
+            "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout" +
+            "/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout" +
+            "/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.FrameLayout" +
+            "/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout" +
+            "/android.widget.LinearLayout/android.view.ViewGroup/android.widget.ScrollView" +
+            "/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView[2]" +
+            "/android.widget.LinearLayout[4]/android.widget.LinearLayout" +
+            "/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.TextView");
     public void Connect_Printer_to_WiFi_AP(){
 
 
@@ -276,12 +285,18 @@ public class ConnectivityPageAndroid extends TestBase {
 
         waitForElement(Hoptspot_Mode_Open_setting_btn);
         driver.findElement(Hoptspot_Mode_Open_setting_btn).click();
-        List<AndroidElement> wifiNetworks = driver.findElements(Native_Wifi_List);
-        for(int i=0;i<wifiNetworks.size();i++){
-            System.out.println(wifiNetworks.get(i));
+
+        waitForElement(printer_sign);
+        // Locate the container element that holds the list of Wi-Fi networks
+        AndroidElement wifiListContainer = (AndroidElement) driver.findElement(By.className("android.widget.LinearLayout"));
+        // Find all the Wi-Fi network elements within the container
+        List<MobileElement> wifiNetworks = wifiListContainer.findElements(By.className("android.widget.LinearLayout"));
+
+        for (MobileElement wifiNetwork : wifiNetworks) {
+            // Get the network name of each Wi-Fi network
+            String networkName = wifiNetwork.getText();
+            System.out.println("this is the output : " + networkName);
         }
-
-
 
     }
 

@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="arranged commit 23-05-2023">
-      <change afterPath="$PROJECT_DIR$/app/HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/testcases/testcases/ConnectivityTest.java" afterDir="false" />
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Connectivity STA AP commit 05-06-2023">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/app&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/WinAppDriver-master/Samples/Java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -451,7 +448,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684850456303</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Connectivity STA AP commit 05-06-2023">
+      <created>1685949309485</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685949309485</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -503,7 +507,8 @@
     <MESSAGE value="Gallery page commit" />
     <MESSAGE value="Gallery page commit 24-04-2023" />
     <MESSAGE value="arranged commit 23-05-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="arranged commit 23-05-2023" />
+    <MESSAGE value="Connectivity STA AP commit 05-06-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connectivity STA AP commit 05-06-2023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

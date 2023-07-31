@@ -75,9 +75,7 @@ public class TestBase {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0," + pixel + ")", "");
     }
-    public static void Tap_screen (int startx, int starty) throws InterruptedException {
-       // int startx = 568;
-       // int starty = 2140 ;
+    public static void Tap_screen (int startx, int starty)throws InterruptedException {
         TouchAction action = new  TouchAction(driver);
         action.tap(PointOption.point(startx, starty))
                 .release()
