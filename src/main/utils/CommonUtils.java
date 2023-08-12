@@ -52,5 +52,20 @@ public class CommonUtils {
     public static void main(String... args) throws IOException {
         CommonUtils.read_properties();
     }
+    private static Process serverProcess ;
+    public static void startServer() throws IOException, InterruptedException {
+
+        ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "start", "appium -a 127.0.0.1 -p 4723 --base-path /wd/hub");
+        serverProcess = processBuilder.start();
+        Thread.sleep(10000);
+    }
+    public static void killServer() {
+
+
+        if (serverProcess != null) {
+            serverProcess.destroy();
+        }
+    }
+
 
 }

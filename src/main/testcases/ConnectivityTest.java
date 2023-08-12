@@ -1,4 +1,4 @@
-package testcases.testcases;
+package testcases;
 
 import androidpageobjectss.ConnectivityPageAndroid;
 import androidpageobjectss.LandingPageAndroid;

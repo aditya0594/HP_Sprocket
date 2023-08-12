@@ -8,13 +8,12 @@ import java.util.Date;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
 import utils.CommonUtils;
 import utils.AppConfigTags;
@@ -25,7 +24,10 @@ public class TestBase {
 
     public static AppiumDriver driver;
     //public LandingPageAndroid LandingPage;
-
+    @BeforeClass
+    public void appiumStart() throws IOException, InterruptedException {
+        CommonUtils.startServer();
+    }
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
@@ -60,6 +62,10 @@ public class TestBase {
     @AfterTest
     public void closeApp(){
         //driver.closeApp();
+    }
+    @AfterClass
+    public void appiumEnd() throws IOException, InterruptedException {
+        CommonUtils.killServer();
     }
     public static By waitForElement(By element) {
         WebDriverWait w = new WebDriverWait(driver,3);
