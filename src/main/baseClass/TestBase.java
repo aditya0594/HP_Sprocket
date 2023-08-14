@@ -1,16 +1,17 @@
 package baseClass;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.apache.commons.io.FileUtils;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverInfo;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
@@ -23,21 +24,30 @@ import utils.Constants;
 public class TestBase {
 
     public static AppiumDriver driver;
+    public static WebDriver webdriver;
+    String drivertype = "chrome";
     //public LandingPageAndroid LandingPage;
-    @BeforeClass
-    public void appiumStart() throws IOException, InterruptedException {
-        CommonUtils.startServer();
-    }
+
 
     @BeforeMethod
-    public void setUp() throws MalformedURLException {
+    public void setUp() throws IOException, InterruptedException {
 
+        switch(drivertype){
+            case("appium"):
+                CommonUtils.startServer();
+                System.out.println("Setup TestCase");
+                CommonUtils utils = new CommonUtils();
+                utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
+                driver = utils.driver;
+                break;
+            case("chrome"):
+                ChromeDriverManager.chromedriver().setup();
+                webdriver = new ChromeDriver();
+                break;
+        }
     	 //configuration items to change the look and feel
          //add content, manage tests etc
-        System.out.println("Setup TestCase");
-        CommonUtils utils = new CommonUtils();
-        utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
-        driver = utils.driver;
+
 
     }
 
@@ -53,7 +63,14 @@ public class TestBase {
 //    }
 	@AfterMethod
 	public void Aftertest() throws InterruptedException {
-        driver.quit();
+        if(drivertype == "appium")
+        {
+            driver.closeApp();
+        }
+        else
+        {
+            webdriver.quit();
+        }
 	}
 	@AfterSuite
 	public void tearDown() {
@@ -61,16 +78,25 @@ public class TestBase {
 	}
     @AfterTest
     public void closeApp(){
-        //driver.closeApp();
+        if(drivertype == "appium")
+        {
+            driver.closeApp();
+        }
+        else
+        {
+            webdriver.quit();
+        }
     }
-    @AfterClass
+ /*   @AfterClass
     public void appiumEnd() throws IOException, InterruptedException {
-        CommonUtils.killServer();
-    }
-    public static By waitForElement(By element) {
+        if(drivertype == "appium")
+        {
+            CommonUtils.killServer();
+        }
+    }*/
+    public static void waitForElement(By element) {
         WebDriverWait w = new WebDriverWait(driver,3);
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
-        return element;
     }
 
     public void scrollDown() {

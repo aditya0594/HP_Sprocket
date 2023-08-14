@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Connectivity STA AP commit 07-06-2023">
-      <change afterPath="$PROJECT_DIR$/src/main/Features/LandingPage.Feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Runner/TestRunner.java" afterDir="false" />
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Connectivity STA AP commit 05-06-2023">
+      <change afterPath="$PROJECT_DIR$/src/main/Features/login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/testcases/ConnectivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/ConnectivityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Aditya Pawar/eclipse-workspace/wavar",
+    "last_opened_file_path": "C:/Users/HM/IdeaProjects/HP_Sprocket/src/main/Features",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -66,30 +64,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HM\IdeaProjects\HP_Sprocket\src\main\Features" />
       <recent name="C:\Users\Aditya Pawar\IdeaProjects\HP_Sprocket\app" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\app" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\main" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket" />
-      <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\resources\app" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="androidpageobjectss" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteUserPageTest">
-    <configuration name="CommonUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.CommonUtils" />
-      <module name="HP_Sprocket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LoginStepDefinition.Frames_Switching">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -98,61 +84,6 @@
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
       <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteUserPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserPageTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteUserPageTest.Delete_user" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserPageTest" />
-      <option name="METHOD_NAME" value="Delete_user" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -195,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -207,8 +138,35 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
-      <option name="METHOD_NAME" value="Sign_up" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginStepDefinition.Frames_Switching" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="METHOD_NAME" value="Frames_Switching" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -223,21 +181,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition.Windows_Switching" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Runner.*" />
+          <option name="PATTERN" value="testcases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="Runner" />
-      <option name="MAIN_CLASS_NAME" value="Runner.TestRunner" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="METHOD_NAME" value="Windows_Switching" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginStepDefinition.alert_webBaseAlert" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="METHOD_NAME" value="alert_webBaseAlert" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginStepDefinition.user_already_on_login_page" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="METHOD_NAME" value="user_already_on_login_page" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -345,24 +360,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CommonUtils" />
       <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_image" />
       <item itemvalue="TestNG.TestSuite " />
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
-      <item itemvalue="TestNG.DeleteUserPageTest" />
-      <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
-      <item itemvalue="TestNG.LandingPageTest.Sign_up" />
-      <item itemvalue="TestNG.TestRunner" />
+      <item itemvalue="TestNG.LoginStepDefinition" />
+      <item itemvalue="TestNG.LoginStepDefinition.Frames_Switching" />
+      <item itemvalue="TestNG.LoginStepDefinition.Windows_Switching" />
+      <item itemvalue="TestNG.LoginStepDefinition.alert_webBaseAlert" />
+      <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.DeleteUserPageTest" />
-        <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
-        <item itemvalue="Application.CommonUtils" />
-        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
-        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="TestNG.LoginStepDefinition.Frames_Switching" />
+        <item itemvalue="TestNG.LoginStepDefinition" />
+        <item itemvalue="TestNG.LoginStepDefinition.Windows_Switching" />
+        <item itemvalue="TestNG.LoginStepDefinition.alert_webBaseAlert" />
+        <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
       </list>
     </recent_temporary>
   </component>
