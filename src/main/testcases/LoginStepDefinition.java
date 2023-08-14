@@ -92,6 +92,6 @@ public class LoginStepDefinition extends TestBase {
 		webdriver.switchTo().frame(1);
 		Thread.sleep(10000);
 		webdriver.findElement(By.xpath("//div[@class=\"col-xs-6 col-xs-offset-5\"]//input")).sendKeys("aditya");
-		Thread.sleep(10000);
+
 	}
 }
