@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Connectivity STA AP commit 05-06-2023">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit 14-08-2023">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +26,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Converted_BDD" />
+        <entry key="$PROJECT_DIR$" value="7f6e4404205c42a3fc2ab28bcf79569070269aaa" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -82,7 +87,28 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginStepDefinition.Frames_Switching">
+  <component name="RunManager" selected="TestNG.LoginStepDefinition">
+    <configuration name="C:/Users/HM/IdeaProjects/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -133,6 +159,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginStepDefinition (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginStepDefinition" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -160,7 +213,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition.Frames_Switching" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition.data_provider_exam" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -173,7 +226,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="METHOD_NAME" value="Frames_Switching" />
+      <option name="METHOD_NAME" value="data_provider_exam" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -188,7 +241,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition.Windows_Switching" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition.tooltip" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -201,63 +254,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="METHOD_NAME" value="Windows_Switching" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginStepDefinition.alert_webBaseAlert" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="METHOD_NAME" value="alert_webBaseAlert" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginStepDefinition.user_already_on_login_page" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="METHOD_NAME" value="user_already_on_login_page" />
+      <option name="METHOD_NAME" value="tooltip" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -372,19 +369,19 @@
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
+      <item itemvalue="TestNG.C:/Users/HM/IdeaProjects/HP_Sprocket/testng.xml" />
+      <item itemvalue="TestNG.LoginStepDefinition (1)" />
+      <item itemvalue="TestNG.LoginStepDefinition.data_provider_exam" />
+      <item itemvalue="TestNG.LoginStepDefinition.tooltip" />
       <item itemvalue="TestNG.LoginStepDefinition" />
-      <item itemvalue="TestNG.LoginStepDefinition.Frames_Switching" />
-      <item itemvalue="TestNG.LoginStepDefinition.Windows_Switching" />
-      <item itemvalue="TestNG.LoginStepDefinition.alert_webBaseAlert" />
-      <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginStepDefinition.Frames_Switching" />
         <item itemvalue="TestNG.LoginStepDefinition" />
-        <item itemvalue="TestNG.LoginStepDefinition.Windows_Switching" />
-        <item itemvalue="TestNG.LoginStepDefinition.alert_webBaseAlert" />
-        <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
+        <item itemvalue="TestNG.LoginStepDefinition (1)" />
+        <item itemvalue="TestNG.LoginStepDefinition.data_provider_exam" />
+        <item itemvalue="TestNG.C:/Users/HM/IdeaProjects/HP_Sprocket/testng.xml" />
+        <item itemvalue="TestNG.LoginStepDefinition.tooltip" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +457,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684850456303</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" commit 14-08-2023">
+      <created>1692015813460</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692015813460</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" commit 14-08-2023">
+      <created>1692015876387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692015876387</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -474,7 +485,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Converted_BDD" />
+                        <option value="origin/master_BDD" />
                       </list>
                     </value>
                   </entry>
@@ -513,7 +524,8 @@
     <MESSAGE value="Gallery page commit 24-04-2023" />
     <MESSAGE value="arranged commit 23-05-2023" />
     <MESSAGE value="Connectivity STA AP commit 07-06-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Connectivity STA AP commit 07-06-2023" />
+    <MESSAGE value=" commit 14-08-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value=" commit 14-08-2023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

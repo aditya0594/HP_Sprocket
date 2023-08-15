@@ -63,7 +63,7 @@ public class TestBase {
 //    }
 	@AfterMethod
 	public void Aftertest() throws InterruptedException {
-        if(drivertype == "appium")
+        if(drivertype == "Chrome")
         {
             driver.closeApp();
         }

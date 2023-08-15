@@ -3,8 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket">
         <classes>
-            <class name="testcases.LandingPageTest">
-                <methods>
+            <!--<class name="testcases.LandingPageTest">
                     <include name="Sign_up"/>
                     <include name="login"/>
                     <include name="Ill_Do_it"/>
@@ -27,8 +26,15 @@
                 <methods>
                     <include name="Delete_user"/>
                 </methods>
+            </class>-->
+            <class name="testcases.LoginStepDefinition">
+                <methods>
+                    <include name="user_already_on_login_page"/>
+                    <include name="alert_webBaseAlert"/>
+                    <include name="Windows_Switching"/>
+                    <include name="Frames_Switching"/>
+                </methods>
             </class>
-
         </classes>
     </test>
 </suite>
