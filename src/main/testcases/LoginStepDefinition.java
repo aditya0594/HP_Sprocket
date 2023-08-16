@@ -8,6 +8,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -16,20 +17,22 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.sql.Array;
 import java.time.Instant;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class LoginStepDefinition extends TestBase {
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	//@Given("^user is already on Login Page$")
 	public void user_already_on_login_page() {
-		webdriver.get("https://www.amazon.in");
+		webdriver.navigate().to("https://www.amazon.in");
 	}
 
 	@Test(priority = 1, enabled = false)
@@ -125,6 +128,7 @@ public class LoginStepDefinition extends TestBase {
 	public void Action_class () throws InterruptedException {
 
 		webdriver.get("https://demo.automationtesting.in/Register.html");
+		//webdriver.navigate().to();
 				WebDriverWait wait = new WebDriverWait(webdriver,10);
 				WebElement movetoElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']")));
 	//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
@@ -182,11 +186,46 @@ public class LoginStepDefinition extends TestBase {
 	public Object[][] dataprovidermethod() {
 		return new Object[][]{{"data1"},{"data2"}};
 	}
-	@Test(priority = 1, enabled = true, dataProvider = "data-provider")
+	@Test(priority = 1, enabled = false, dataProvider = "data-provider")
 	public void data_provider_exam(String data) throws InterruptedException {
-
+		Reporter.log("this is data showing");
 		System.out.println("Data is: " + data);
 	}
 
+	@Test(priority = 0, enabled = true)
+	public void ConvertArray_in_ArrayList(String data) throws InterruptedException {
 
+		String[] aditya = {"aditya","Pawar"};
+		// conver array into array list using the AsList
+
+		ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(aditya));
+		System.out.println(arrayList);
+
+	}
+
+	/*public static void main(String[] args){
+		String[] aditya = {"aditya","Pawar"};
+		// conver array into array list using the AsList
+
+		ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(aditya));
+		System.out.println(arrayList);
+
+		// by usage of map and the hashmap
+
+		Map<String , String > hashmap = new HashMap<String, String>();
+		hashmap.put("aditya", "2");
+		hashmap.put("pawar", "3");
+		hashmap.put("","");
+		hashmap.put("geeta","subhash");
+
+		System.out.println("hashmapp example all keyset: "+ hashmap.keySet());
+		System.out.println("hashmapp example all values: "+ hashmap.values());
+
+		for(Map.Entry<String, String> en : hashmap.entrySet()){
+			System.out.println(en.getKey()+" = "+ en.getValue() );
+		}
+
+		System.out.println("get the value : "+ hashmap.get("subhash"));
+
+	}*/
 }

@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.openqa.selenium.By;
 
 import baseClass.ScreenBase;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import utils.CommonUtils;
 
@@ -45,7 +47,8 @@ public class LandingPageAndroid extends ScreenBase {
             e.printStackTrace();
         }
     }
-
+    //@FindBy(xpath = "elementId")
+    //WebElement elementByID;
     //hp sprocket
     By Full_Name = By.id("com.hp.impulse.sprocket:id/editTextFullname");
     By Email = By.id("com.hp.impulse.sprocket:id/editTextEmail");
