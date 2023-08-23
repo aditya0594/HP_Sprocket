@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit 15-08-2023">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Connectivity STA AP commit 05-06-2023">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginStepDefinition.user_already_on_login_page">
+  <component name="RunManager" selected="TestNG.LoginStepDefinition (2)">
     <configuration name="LoginStepDefinition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
       <module name="HP_Sprocket" />
@@ -369,10 +370,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginStepDefinition (2)" />
         <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
         <item itemvalue="Application.LoginStepDefinition" />
         <item itemvalue="TestNG.LoginStepDefinition.ConvertArray_in_ArrayList" />
-        <item itemvalue="TestNG.LoginStepDefinition (2)" />
         <item itemvalue="TestNG.LoginStepDefinition.Action_class" />
       </list>
     </recent_temporary>

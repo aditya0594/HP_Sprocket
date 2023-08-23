@@ -29,10 +29,16 @@ import java.util.*;
 
 public class LoginStepDefinition extends TestBase {
 
+	//
 	@Test(priority = 1, enabled = true)
 	//@Given("^user is already on Login Page$")
-	public void user_already_on_login_page() {
-		webdriver.navigate().to("https://www.amazon.in");
+	public void user_already_on_login_page() throws InterruptedException {
+		webdriver.get("https://www.google.com/");
+		webdriver.findElement(By.xpath("//*[@id='APjFqb']")).sendKeys("Car");
+		//WebDriverWait wait = new WebDriverWait(driver,10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='APjFqb']")));
+		webdriver.findElement(By.xpath("//*[@id='APjFqb']")).sendKeys(Keys.ENTER);
+		Thread.sleep(10000);
 	}
 
 	@Test(priority = 1, enabled = false)
@@ -83,7 +89,6 @@ public class LoginStepDefinition extends TestBase {
 		// Switch back to parent window
 		webdriver.switchTo().window(parentWindowHandle);
 		Thread.sleep(10000);
-
 
 	}
 
@@ -192,7 +197,7 @@ public class LoginStepDefinition extends TestBase {
 		System.out.println("Data is: " + data);
 	}
 
-	@Test(priority = 0, enabled = true)
+	@Test(priority = 0, enabled = false)
 	public void ConvertArray_in_ArrayList(String data) throws InterruptedException {
 
 		String[] aditya = {"aditya","Pawar"};
@@ -228,4 +233,5 @@ public class LoginStepDefinition extends TestBase {
 		System.out.println("get the value : "+ hashmap.get("subhash"));
 
 	}*/
+
 }
