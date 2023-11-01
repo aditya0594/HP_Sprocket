@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit 16-08-2023">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit thinkpad 01-11-2023" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -487,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692203937030</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=" commit thinkpad 01-11-2023">
+      <created>1698852145620</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698852145620</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -543,7 +548,8 @@
     <MESSAGE value=" commit 14-08-2023" />
     <MESSAGE value=" commit 15-08-2023" />
     <MESSAGE value=" commit 16-08-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value=" commit 16-08-2023" />
+    <MESSAGE value=" commit thinkpad 01-11-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value=" commit thinkpad 01-11-2023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
