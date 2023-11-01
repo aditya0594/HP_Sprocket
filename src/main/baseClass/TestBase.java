@@ -6,12 +6,15 @@ import java.util.Date;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverInfo;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
@@ -29,9 +32,9 @@ public class TestBase {
     //public LandingPageAndroid LandingPage;
 
 
+    @Parameters("appium")
     @BeforeMethod
     public void setUp() throws IOException, InterruptedException {
-
         switch(drivertype){
             case("appium"):
                 CommonUtils.startServer();
@@ -41,8 +44,8 @@ public class TestBase {
                 driver = utils.driver;
                 break;
             case("chrome"):
-                ChromeDriverManager.chromedriver().setup();
-                webdriver = new ChromeDriver();
+                WebDriverManager.edgedriver().setup();
+                webdriver = new EdgeDriver();
                 break;
         }
     	 //configuration items to change the look and feel
