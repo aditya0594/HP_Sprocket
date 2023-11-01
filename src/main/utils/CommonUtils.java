@@ -35,8 +35,7 @@ public class CommonUtils {
         caps.setCapability("udid","RZ8NA1P2S8D");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
         driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
-
+        driver.manage().timeouts().implicitlyWait(4,TimeUnit.SECONDS);
 
     }
 
