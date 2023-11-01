@@ -169,7 +169,7 @@ public class LoginStepDefinition extends TestBase {
 			System.out.println("this is the list of elements" + list.size());
 		}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void tooltip() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Register.html");
 		WebDriverWait wait = new WebDriverWait(webdriver, 10);
@@ -192,7 +192,7 @@ public class LoginStepDefinition extends TestBase {
 		System.out.println("Data is: " + data);
 	}
 
-	@Test(priority = 0, enabled = true)
+	@Test(priority = 0, enabled = false)
 	public void ConvertArray_in_ArrayList(String data) throws InterruptedException {
 
 		String[] aditya = {"aditya","Pawar"};
