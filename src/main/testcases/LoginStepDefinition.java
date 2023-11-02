@@ -24,6 +24,7 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.FileInputStream;
 import java.sql.Array;
+import java.time.Duration;
 import java.time.Instant;
 import java.util.*;
 
@@ -107,7 +108,7 @@ public class LoginStepDefinition extends TestBase {
 	public void Scroll_using_javascript() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Register.html");
 		webdriver.manage().window().maximize();
-		WebDriverWait wait = new WebDriverWait(webdriver,10);
+		WebDriverWait wait = new WebDriverWait(webdriver,Duration.ofSeconds(3));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='secondpassword']")));
 		Thread.sleep(10000);
 		//WebElement elementtoscroll = webdriver.findElement(By.xpath("//input[@id='secondpassword']"));
@@ -129,7 +130,7 @@ public class LoginStepDefinition extends TestBase {
 
 		webdriver.get("https://demo.automationtesting.in/Register.html");
 		//webdriver.navigate().to();
-				WebDriverWait wait = new WebDriverWait(webdriver,10);
+				WebDriverWait wait = new WebDriverWait(webdriver,Duration.ofSeconds(5));
 				WebElement movetoElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']")));
 	//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
 		webdriver.manage().window().maximize();
@@ -163,7 +164,7 @@ public class LoginStepDefinition extends TestBase {
 		@Test(priority = 1, enabled = false)
 		public void Findelements_List() throws InterruptedException {
 			webdriver.get("https://demo.automationtesting.in/Register.html");
-			WebDriverWait wait = new WebDriverWait(webdriver,10);
+			WebDriverWait wait = new WebDriverWait(webdriver,Duration.ofSeconds(5));
 			//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
 			List<WebElement> list =webdriver.findElements(By.xpath("//div[@class='col-md-4 col-xs-4 col-sm-4']//input"));
 			System.out.println("this is the list of elements" + list.size());
@@ -172,7 +173,7 @@ public class LoginStepDefinition extends TestBase {
 	@Test(priority = 1, enabled = true)
 	public void tooltip() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Register.html");
-		WebDriverWait wait = new WebDriverWait(webdriver, 10);
+		WebDriverWait wait = new WebDriverWait(webdriver, Duration.ofSeconds(2) );
 		WebElement movetoElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']")));
 		//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
 		webdriver.manage().window().maximize();

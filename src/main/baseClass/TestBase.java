@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -68,7 +69,7 @@ public class TestBase {
 	public void Aftertest() throws InterruptedException {
         if(drivertype == "Chrome")
         {
-            driver.closeApp();
+           // driver.closeApp();
         }
         else
         {
@@ -83,7 +84,7 @@ public class TestBase {
     public void closeApp(){
         if(drivertype == "appium")
         {
-            driver.closeApp();
+            //driver.closeApp();
         }
         else
         {
@@ -113,7 +114,7 @@ public class TestBase {
     public static void Tap_screen (int startx, int starty) throws InterruptedException {
        // int startx = 568;
        // int starty = 2140 ;
-        TouchAction action = new  TouchAction(driver);
+        TouchAction action = new  TouchAction((PerformsTouchActions) driver);
         action.tap(PointOption.point(startx, starty))
                 .release()
                 .perform();
@@ -121,7 +122,7 @@ public class TestBase {
     public static void Slide_touch (int startx, int starty, int endX, int endY ) throws InterruptedException {
         // int startx = 568;
         // int starty = 2140 ;
-        TouchAction action = new  TouchAction(driver);
+        TouchAction action = new  TouchAction((PerformsTouchActions) driver);
         action.press(PointOption.point(startx, starty))
                 .waitAction()
                 .moveTo(PointOption.point(endX, endY))

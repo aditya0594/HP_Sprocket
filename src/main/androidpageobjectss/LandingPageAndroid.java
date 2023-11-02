@@ -368,7 +368,7 @@ public class LandingPageAndroid extends ScreenBase {
     
     public void exit_app() {
 
-        driver.closeApp();
+       // driver.closeApp();
     }
 }
 
