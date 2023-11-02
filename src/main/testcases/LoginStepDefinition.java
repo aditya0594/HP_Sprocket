@@ -1,31 +1,15 @@
 package testcases;
 
-
 import baseClass.TestBase;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.sql.Array;
 import java.time.Duration;
-import java.time.Instant;
 import java.util.*;
 
 public class LoginStepDefinition extends TestBase {
@@ -33,7 +17,7 @@ public class LoginStepDefinition extends TestBase {
 	@Test(priority = 1, enabled = true)
 	//@Given("^user is already on Login Page$")
 	public void user_already_on_login_page() {
-		webdriver.navigate().to("https://www.amazon.in");
+		webdriver.get("https://www.amazon.in");
 	}
 
 	@Test(priority = 1, enabled = false)
@@ -170,7 +154,7 @@ public class LoginStepDefinition extends TestBase {
 			System.out.println("this is the list of elements" + list.size());
 		}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void tooltip() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Register.html");
 		WebDriverWait wait = new WebDriverWait(webdriver, Duration.ofSeconds(2) );

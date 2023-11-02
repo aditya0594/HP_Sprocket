@@ -2,6 +2,7 @@ package baseClass;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 
 import io.appium.java_client.PerformsTouchActions;
@@ -45,8 +46,10 @@ public class TestBase {
                 driver = utils.driver;
                 break;
             case("chrome"):
-                WebDriverManager.edgedriver().setup();
-                webdriver = new EdgeDriver();
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--remote-allow-origins=*");
+                webdriver = new ChromeDriver(options);
                 break;
         }
     	 //configuration items to change the look and feel
@@ -73,7 +76,7 @@ public class TestBase {
         }
         else
         {
-            webdriver.quit();
+           // webdriver.quit();
         }
 	}
 	@AfterSuite
@@ -99,7 +102,7 @@ public class TestBase {
         }
     }*/
     public static void waitForElement(By element) {
-        WebDriverWait w = new WebDriverWait(driver,3);
+        WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
     }
 

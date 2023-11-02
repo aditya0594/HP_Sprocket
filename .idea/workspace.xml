@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit thinkpad 01-11-2023">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit thinkpad 02-11-2023">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
@@ -64,17 +65,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HM/IdeaProjects/HP_Sprocket/src/main/Features&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/HM/IdeaProjects/HP_Sprocket/src/main/Features",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HM\IdeaProjects\HP_Sprocket\src\main\Features" />
@@ -88,7 +89,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginStepDefinition.tooltip">
+  <component name="RunManager" selected="TestNG.LoginStepDefinition (4)">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -166,7 +167,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -193,7 +194,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -220,7 +221,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition.tooltip" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition (5)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -233,9 +234,35 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="METHOD_NAME" value="tooltip" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginStepDefinition" type="TestNG" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -377,18 +404,19 @@
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
       <item itemvalue="TestNG.LoginStepDefinition" />
+      <item itemvalue="TestNG.LoginStepDefinition (3)" />
+      <item itemvalue="TestNG.LoginStepDefinition (4)" />
+      <item itemvalue="TestNG.LoginStepDefinition (5)" />
       <item itemvalue="TestNG.LoginStepDefinition (1)" />
-      <item itemvalue="TestNG.LoginStepDefinition.tooltip" />
       <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
-      <item itemvalue="TestNG.LoginStepDefinition (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginStepDefinition.tooltip" />
+        <item itemvalue="TestNG.LoginStepDefinition (4)" />
+        <item itemvalue="TestNG.LoginStepDefinition (5)" />
         <item itemvalue="TestNG.LoginStepDefinition (1)" />
-        <item itemvalue="TestNG.LoginStepDefinition" />
-        <item itemvalue="TestNG.LoginStepDefinition (2)" />
         <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
+        <item itemvalue="TestNG.LoginStepDefinition (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -506,7 +534,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698852325256</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=" commit thinkpad 02-11-2023">
+      <created>1698902300470</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1698902300470</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -563,7 +598,8 @@
     <MESSAGE value=" commit 15-08-2023" />
     <MESSAGE value=" commit 16-08-2023" />
     <MESSAGE value=" commit thinkpad 01-11-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value=" commit thinkpad 01-11-2023" />
+    <MESSAGE value=" commit thinkpad 02-11-2023" />
+    <option name="LAST_COMMIT_MESSAGE" value=" commit thinkpad 02-11-2023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

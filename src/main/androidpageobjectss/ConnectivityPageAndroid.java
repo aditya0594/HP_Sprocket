@@ -2,6 +2,7 @@ package androidpageobjectss;
 
 import baseClass.TestBase;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import java.time.Duration;
 import java.util.List;
 
 public class ConnectivityPageAndroid extends TestBase {
@@ -55,14 +57,14 @@ public class ConnectivityPageAndroid extends TestBase {
 
     }
 
-    private static boolean waitForPrinterToBeFound(AndroidDriver<MobileElement> driver, By locator, int timeoutSeconds) {
+    private static boolean waitForPrinterToBeFound(AndroidDriver driver, By locator, int timeoutSeconds) {
         long startTime = System.currentTimeMillis();
         long timeoutMillis = timeoutSeconds * 1000;
         boolean printerFound = false;
 
         while (System.currentTimeMillis() - startTime < 9000) {
             try {
-                MobileElement printerElement = driver.findElement(locator);
+               // MobileElement printerElement = driver.findElement(locator);
                 if (printerElement.isDisplayed()) {
                     printerFound = true;
                     break;
@@ -84,7 +86,7 @@ public class ConnectivityPageAndroid extends TestBase {
 
     }
 
-    private static boolean isElementPresent(AppiumDriver<MobileElement> driver, By locator) {
+    private static boolean isElementPresent(AppiumDriver driver, By locator) {
         try {
             driver.findElement(locator);
             return true;
@@ -94,7 +96,7 @@ public class ConnectivityPageAndroid extends TestBase {
     }
 
     private static void waitForLoaderToDisappear(AppiumDriver driver, By loaderLocator) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(loaderLocator));
     }
 
@@ -273,7 +275,7 @@ public class ConnectivityPageAndroid extends TestBase {
 
         waitForElement(Hoptspot_Mode_Open_setting_btn);
         driver.findElement(Hoptspot_Mode_Open_setting_btn).click();
-        List<AndroidElement> wifiNetworks = driver.findElements(Native_Wifi_List);
+        List<WebElement> wifiNetworks = driver.findElements(Native_Wifi_List);
         for(int i=0;i<wifiNetworks.size();i++){
             System.out.println(wifiNetworks.get(i));
         }
