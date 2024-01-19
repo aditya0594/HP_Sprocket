@@ -84,7 +84,7 @@ public class GalleryPageAndroid extends TestBase {
         driver.findElement(Allphotos1).click();
         driver.findElement(Allphotos2).click();
         driver.findElement(Allphotos3).click();
-        Tap_screen(568, 2140);
+       // Tap_screen(568, 2140);
        waitForElement(Collage_image_ver);
        driver.findElement(Collage_image_ver).click();
         driver.findElement(popup_ok).click();
@@ -101,7 +101,7 @@ public class GalleryPageAndroid extends TestBase {
         driver.findElement(Allphotos1).click();
         driver.findElement(Allphotos2).click();
         driver.findElement(Allphotos3).click();
-        Tap_screen(568, 2140);
+        //Tap_screen(568, 2140);
         waitForElement(Collage_image_ver);
         driver.findElement(Collage_image_ver).click();
         driver.findElement(popup_ok).click();

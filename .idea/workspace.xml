@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment=" commit thinkpad 01-11-2023" />
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="comitte 19-01-2024">
+      <change afterPath="$PROJECT_DIR$/Chrome Latest Version/chromedriver_win.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-08-2023_05_59_pm__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-08-2023_05_59_pm__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +35,12 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="7f6e4404205c42a3fc2ab28bcf79569070269aaa" />
+        <entry key="$PROJECT_DIR$" value="02b147128ca64a1b0110b20bb412caab189218d5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -61,7 +78,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HM/IdeaProjects/HP_Sprocket/src/main/Features&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/Chrome Latest Version&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -70,18 +87,18 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aditya Pawar\IdeaProjects\HP_Sprocket\Chrome Latest Version" />
       <recent name="C:\Users\HM\IdeaProjects\HP_Sprocket\src\main\Features" />
       <recent name="C:\Users\Aditya Pawar\IdeaProjects\HP_Sprocket\app" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\app" />
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\main" />
-      <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="androidpageobjectss" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginStepDefinition.tooltip">
+  <component name="RunManager" selected="TestNG.TestRunner">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
@@ -132,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -159,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -186,7 +203,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginStepDefinition" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginStepDefinition.alert_webBaseAlert" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP_Sprocket" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -199,34 +216,7 @@
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
       <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginStepDefinition.tooltip" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LoginStepDefinition" />
-      <option name="METHOD_NAME" value="tooltip" />
+      <option name="METHOD_NAME" value="alert_webBaseAlert" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="PARAMETERS" value="" />
@@ -257,6 +247,33 @@
       <option name="METHOD_NAME" value="user_already_on_login_page" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP_Sprocket" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.TestRunner" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="TEST_SEARCH_SCOPE">
@@ -369,18 +386,18 @@
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
-      <item itemvalue="TestNG.LoginStepDefinition" />
-      <item itemvalue="TestNG.LoginStepDefinition (1)" />
-      <item itemvalue="TestNG.LoginStepDefinition.tooltip" />
+      <item itemvalue="TestNG.TestRunner" />
+      <item itemvalue="TestNG.LoginStepDefinition (4)" />
+      <item itemvalue="TestNG.LoginStepDefinition.alert_webBaseAlert" />
       <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
-      <item itemvalue="TestNG.LoginStepDefinition (2)" />
+      <item itemvalue="TestNG.LoginStepDefinition (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginStepDefinition.tooltip" />
-        <item itemvalue="TestNG.LoginStepDefinition (1)" />
-        <item itemvalue="TestNG.LoginStepDefinition" />
-        <item itemvalue="TestNG.LoginStepDefinition (2)" />
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="TestNG.LoginStepDefinition.alert_webBaseAlert" />
+        <item itemvalue="TestNG.LoginStepDefinition (4)" />
+        <item itemvalue="TestNG.LoginStepDefinition (3)" />
         <item itemvalue="TestNG.LoginStepDefinition.user_already_on_login_page" />
       </list>
     </recent_temporary>
@@ -549,7 +566,9 @@
     <MESSAGE value=" commit 15-08-2023" />
     <MESSAGE value=" commit 16-08-2023" />
     <MESSAGE value=" commit thinkpad 01-11-2023" />
-    <option name="LAST_COMMIT_MESSAGE" value=" commit thinkpad 01-11-2023" />
+    <MESSAGE value="commit POM file 01-11-2023" />
+    <MESSAGE value="comitte 19-01-2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="comitte 19-01-2024" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

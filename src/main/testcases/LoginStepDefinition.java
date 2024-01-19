@@ -2,13 +2,7 @@ package testcases;
 
 
 import baseClass.TestBase;
-import io.cucumber.datatable.DataTable;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -16,15 +10,10 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.sql.Array;
-import java.time.Instant;
+import java.time.Duration;
 import java.util.*;
 
 public class LoginStepDefinition extends TestBase {
@@ -33,9 +22,10 @@ public class LoginStepDefinition extends TestBase {
 	//@Given("^user is already on Login Page$")
 	public void user_already_on_login_page() {
 		webdriver.navigate().to("https://www.amazon.in");
+
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	//@Given("^user is already on Login Page$")
 	public void alert_webBaseAlert() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Alerts.html");
@@ -88,7 +78,7 @@ public class LoginStepDefinition extends TestBase {
 	}
 
 	@Test(priority = 1, enabled = false)
-	//@Given("^user is already on Login Page$")
+	@Given("^Frames_Switching$")
 	public void Frames_Switching() throws InterruptedException {
 
 		webdriver.get("https://demo.automationtesting.in/Frames.html");
@@ -107,10 +97,9 @@ public class LoginStepDefinition extends TestBase {
 	public void Scroll_using_javascript() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Register.html");
 		webdriver.manage().window().maximize();
-		WebDriverWait wait = new WebDriverWait(webdriver,10);
+		WebDriverWait wait = new WebDriverWait(webdriver,Duration.ofSeconds(10));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='secondpassword']")));
 		Thread.sleep(10000);
-		//WebElement elementtoscroll = webdriver.findElement(By.xpath("//input[@id='secondpassword']"));
 
 
 		// scroll to the element on the page
@@ -126,12 +115,15 @@ public class LoginStepDefinition extends TestBase {
 
 	@Test(priority = 1, enabled = false)
 	public void Action_class () throws InterruptedException {
-
 		webdriver.get("https://demo.automationtesting.in/Register.html");
-		//webdriver.navigate().to();
-				WebDriverWait wait = new WebDriverWait(webdriver,10);
+
+		// Explicit wait
+
+				WebDriverWait wait = new WebDriverWait(webdriver, Duration.ofSeconds(10));
 				WebElement movetoElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']")));
-	//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
+
+
+
 		webdriver.manage().window().maximize();
 		Actions action = new Actions(webdriver);
 		Thread.sleep(3000);    
@@ -163,7 +155,7 @@ public class LoginStepDefinition extends TestBase {
 		@Test(priority = 1, enabled = false)
 		public void Findelements_List() throws InterruptedException {
 			webdriver.get("https://demo.automationtesting.in/Register.html");
-			WebDriverWait wait = new WebDriverWait(webdriver,10);
+			WebDriverWait wait = new WebDriverWait(webdriver,Duration.ofSeconds(10));
 			//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
 			List<WebElement> list =webdriver.findElements(By.xpath("//div[@class='col-md-4 col-xs-4 col-sm-4']//input"));
 			System.out.println("this is the list of elements" + list.size());
@@ -172,9 +164,8 @@ public class LoginStepDefinition extends TestBase {
 	@Test(priority = 1, enabled = true)
 	public void tooltip() throws InterruptedException {
 		webdriver.get("https://demo.automationtesting.in/Register.html");
-		WebDriverWait wait = new WebDriverWait(webdriver, 10);
+		WebDriverWait wait = new WebDriverWait(webdriver, Duration.ofSeconds(10));
 		WebElement movetoElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@placeholder='First Name']")));
-		//	WebElement movetoElement = webdriver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-invalid-required ng-touched']"));
 		webdriver.manage().window().maximize();
 		Actions action = new Actions(webdriver);
 		action.moveToElement(movetoElement).build().perform();
