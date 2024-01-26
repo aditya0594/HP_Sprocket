@@ -6,6 +6,7 @@ import java.time.Duration;
 import java.util.Date;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
+import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -25,12 +26,12 @@ public class TestBase {
 
     public static AppiumDriver driver;
     public static WebDriver webdriver;
-    String drivertype = "chrome";
+    //String drivertype = "chrome";
     //public LandingPageAndroid LandingPage;
 
 
-    @Parameters("chrome")
-    @BeforeMethod
+   // @Parameters("chrome")
+ /*   @BeforeMethod
     public void setUp() throws IOException, InterruptedException {
         switch(drivertype){
             case("appium"):
@@ -51,19 +52,29 @@ public class TestBase {
 
 
     }
+*/
+    @BeforeTest
+    public void setUp(){
+        System.setProperty("webdriver.chrome.driver", "Chrome Latest Version/chromedriver_win.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        webdriver = new ChromeDriver(options);
 
-//    @BeforeTest
-//    public void startapp() throws IOException {
-//    	pageObjectConfig();
-//        System.out.println("Setup TestCase");
-//
-//        CommonUtils utils = new CommonUtils();
-//
-//        utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
-//        driver = utils.driver;
-//    }
+        webdriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    }
+
+ /*      @BeforeTest
+    public void startapp() throws IOException {
+    	pageObjectConfig();
+        System.out.println("Setup TestCase");
+
+        CommonUtils utils = new CommonUtils();
+
+        utils.setup(AppConfigTags.ANDROID, AppConfigTags.MOTOROLA, Constants.ANDROID_URI);
+        driver = utils.driver;
+    }*/
 	@AfterMethod
-	public void Aftertest() throws InterruptedException {
+	/*public void Aftertest() throws InterruptedException {
         if(drivertype == "Chrome")
         {
            // driver.closeApp();
@@ -72,21 +83,21 @@ public class TestBase {
         {
             webdriver.quit();
         }
-	}
+	}*/
 	@AfterSuite
 	public void tearDown() {
        // driver.quit();
 	}
     @AfterTest
     public void closeApp(){
-        if(drivertype == "appium")
+   /*     if(drivertype == "appium")
         {
             //driver.closeApp();
         }
         else
         {
             webdriver.quit();
-        }
+        }*/
     }
  /*   @AfterClass
     public void appiumEnd() throws IOException, InterruptedException {
