@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
@@ -67,14 +68,6 @@ public class TestBase {
         return element;
     }
 
-    public void scrollDown() {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0,250)");
-    }
-    public void scrollDown(String pixel) {
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("window.scrollBy(0," + pixel + ")", "");
-    }
     public static void Tap_screen (int startx, int starty)throws InterruptedException {
         TouchAction action = new  TouchAction(driver);
         action.tap(PointOption.point(startx, starty))
@@ -92,6 +85,46 @@ public class TestBase {
                 .perform();
     }
 
+
+    public static void swipe(int startX, int startY,int endX,int endY) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap<String, Object> scrollObject = new HashMap<>();
+        scrollObject.put("direction", "down"); // Optionally you can still provide a direction
+        scrollObject.put("startX", startX);
+        scrollObject.put("startY", startY);
+        scrollObject.put("endX", endX);
+        scrollObject.put("endY", endY);
+        js.executeScript("mobile: dragGesture", scrollObject);
+        // Slide_touch_mobile(531, 51, 463, 1094);
+
+    }
+    public static void swipeUp(int startX, int startY,int endX,int endY) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap<String, Object> scrollObject = new HashMap<>();
+        scrollObject.put("direction", "up"); // Optionally you can still provide a direction
+        scrollObject.put("startX", startX);
+        scrollObject.put("startY", startY);
+        scrollObject.put("endX", endX);
+        scrollObject.put("endY", endY);
+        js.executeScript("mobile: dragGesture", scrollObject);
+        // Slide_touch_mobile(531, 51, 463, 1094);
+
+    }
+
+    public static void moveTo(int startX, int startY) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap<String, Object> swipeObject = new HashMap<>();
+        swipeObject.put("action", "moveTo");
+        swipeObject.put("x", startX); // ending x-coordinate
+        swipeObject.put("y", startY); // ending y-coordinate
+        js.executeScript("mobile: touchAction", swipeObject);
+    }
+    public static void release(int startX, int startY) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        HashMap<String, Object> releaseObject = new HashMap<>();
+        releaseObject.put("action", "release");
+        js.executeScript("mobile: touchAction", releaseObject);
+    }
     public static void captureScreenShots(String Feature_name)throws IOException {
         String folder_name = "screenshot";
         File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

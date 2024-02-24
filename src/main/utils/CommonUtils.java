@@ -26,18 +26,23 @@ public class CommonUtils {
     public void setup(String platformName, String deviceName, String uri) throws MalformedURLException {
     	System.out.println("Session is creating");
 		path = System.getProperty("user.dir");
-    	caps.setCapability("platformName", "Android");
-		caps.setCapability("deviceName", "Galaxy s22 FE");
+    	caps.setCapability("platformName", platformName);
+		caps.setCapability("deviceName", deviceName);
 		caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk");
         //path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk"
 		caps.setCapability("autoGrantPermissions", "true");
         caps.setCapability("fullReset", "true");
         caps.setCapability("udid","RZ8NA1P2S8D");
+        caps.setCapability("browserstack.user", browserStackUsername);
+        caps.setCapability("browserstack.key", browserStackAccessKey);
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
-        driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+        //driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+        driver = new AndroidDriver<MobileElement>(new URL("https://hub-cloud.browserstack.com/wd/hub","adityapawar4",), caps);// URI : http://127.0.0.1:4723/wd/hub"
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
 
-
+        // Hide the keyboard
+        caps.setCapability("unicodeKeyboard", true);
+        caps.setCapability("resetKeyboard", true);
     }
 
     public static Properties read_properties() throws IOException {
