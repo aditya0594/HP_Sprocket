@@ -2,7 +2,6 @@ package androidpageobjectss;
 import baseClass.TestBase;
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder;

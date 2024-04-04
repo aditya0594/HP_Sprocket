@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="appium setup 24-02-2024">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="appium setup 04-04-2024">
+      <change afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -458,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708776899151</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="appium setup 04-04-2024">
+      <created>1712230661506</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712230661508</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,7 +517,8 @@
     <MESSAGE value="arranged commit 23-05-2023" />
     <MESSAGE value="Connectivity STA AP commit 05-06-2023" />
     <MESSAGE value="appium setup 24-02-2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="appium setup 24-02-2024" />
+    <MESSAGE value="appium setup 04-04-2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="appium setup 04-04-2024" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
