@@ -3,12 +3,17 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.HashMap;
 
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,12 +30,22 @@ import utils.Constants;
 public class TestBase {
 
     public static AppiumDriver driver;
+    public AppiumDriverLocalService service;
     //public LandingPageAndroid LandingPage;
 
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
+        service = new AppiumServiceBuilder()
+                        .withIPAddress("127.0.0.1") // Set IP address to 127.0.0.1
+                        .usingPort(4723).build();// Set port to 4723
 
+        service.start();
+        if (service.isRunning()) {
+            System.out.println("Appium server started successfully.");
+        } else {
+            System.err.println("Failed to start Appium server.");
+        }
     	 //configuration items to change the look and feel
          //add content, manage tests etc
         System.out.println("Setup TestCase");
@@ -63,18 +78,27 @@ public class TestBase {
         //driver.closeApp();
     }
     public static By waitForElement(By element) {
-        WebDriverWait w = new WebDriverWait(driver,3);
+        WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
         return element;
     }
 
-    public static void Tap_screen (int startx, int starty)throws InterruptedException {
+    public void scroll_UIautomator(){
+        String scrollableList = "new UiScrollable(new UiSelector().scrollable(true))";
+        String scrollToText = ".scrollIntoView(new UiSelector().text(\"Your Element Text\"))";
+        String scrollToEnd = ".scrollToEnd(1)";
+        String command = scrollableList + scrollToText;
+        driver.findElement(AppiumBy.androidUIAutomator(command));
+
+    }
+
+/*    public static void Tap_screen (int startx, int starty)throws InterruptedException {
         TouchAction action = new  TouchAction(driver);
         action.tap(PointOption.point(startx, starty))
                 .release()
                 .perform();
-    }
-    public static void Slide_touch (int startx, int starty, int endX, int endY ) throws InterruptedException {
+    }*/
+  /*  public static void Slide_touch (int startx, int starty, int endX, int endY ) throws InterruptedException {
         // int startx = 568;
         // int starty = 2140 ;
         TouchAction action = new  TouchAction(driver);
@@ -83,7 +107,8 @@ public class TestBase {
                 .moveTo(PointOption.point(endX, endY))
                 .release()
                 .perform();
-    }
+    }*/
+
 
 
     public static void swipe(int startX, int startY,int endX,int endY) {
@@ -135,6 +160,6 @@ public class TestBase {
         //Setting file name
         String file_name= Feature_name + df.format(new Date())+".png";
         //coppy screenshot file into screenshot folder.
-        FileUtils.copyFile(f, new File(folder_name + "/" + file_name));
+        //FileUtils.copyFile(f, new File(folder_name + "/" + file_name));
     }
 }
