@@ -1,6 +1,5 @@
 
 package testcases;
-import io.cucumber.java.en.Given;
 import org.testng.annotations.Test;
 import baseClass.TestBase;
 import androidpageobjectss.LandingPageAndroid;
@@ -9,7 +8,6 @@ import androidpageobjectss.LandingPageAndroid;
 public class LandingPageTest extends TestBase {
 	
 	public LandingPageAndroid LandingPage = new LandingPageAndroid();
-
     @Test(priority = 1, enabled = true)
     public void Sign_up() throws InterruptedException {
       // LandingPage.verify_signup_disble_firstname();
@@ -41,5 +39,6 @@ public class LandingPageTest extends TestBase {
        // LandingPage.ill_do_later();
         LandingPage.get_started_screen_AfterIlldoit_signup();
     }
+
 
 }

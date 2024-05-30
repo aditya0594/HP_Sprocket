@@ -5,13 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -24,20 +26,28 @@ public class CommonUtils {
     public AppiumDriver driver;
 
     public void setup(String platformName, String deviceName, String uri) throws MalformedURLException {
-    	System.out.println("Session is creating");
-		path = System.getProperty("user.dir");
-    	caps.setCapability("platformName", "Android");
-		caps.setCapability("deviceName", "Galaxy s22 FE");
-		caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk");
-        //path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk"
-		caps.setCapability("autoGrantPermissions", "true");
-        caps.setCapability("fullReset", "true");
-        caps.setCapability("udid","RZ8NA1P2S8D");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
+
+        System.out.println("Session is creating");
+		path = System.getProperty("user.dir");
+    	caps.setCapability("platformName", platformName);
+		caps.setCapability("deviceName", deviceName);
+		//caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk");
+        caps.setCapability("app", path+"//app//SwipeListView Demo_v1.13_apkpure.com.apk");
+        //path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk"
+		caps.setCapability("autoGrantPermissions", true);
+        caps.setCapability("fullReset", false);
+        caps.setCapability("udid","RZ8NA1P2S8D");
+
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
+        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps); //uri : http://127.0.0.1:4723/wd/hub
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
+
+        // Hide the keyboard
+        caps.setCapability("unicodeKeyboard", true);
+        caps.setCapability("resetKeyboard", true);
     }
+
 
     public static Properties read_properties() throws IOException {
 
@@ -51,20 +61,5 @@ public class CommonUtils {
     public static void main(String... args) throws IOException {
         CommonUtils.read_properties();
     }
-    private static Process serverProcess ;
-    public static void startServer() throws IOException, InterruptedException {
-
-        ProcessBuilder processBuilder = new ProcessBuilder("cmd.exe", "/c", "start", "appium -a 127.0.0.1 -p 4723 --base-path /wd/hub");
-        serverProcess = processBuilder.start();
-        Thread.sleep(10000);
-    }
-    public static void killServer() {
-
-
-        if (serverProcess != null) {
-            serverProcess.destroy();
-        }
-    }
-
 
 }

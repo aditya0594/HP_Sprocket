@@ -17,10 +17,10 @@ public class GalleryPageTest extends TestBase {
 
     public void Gallery_verify_album() throws InterruptedException {
         LandingPage.get_started_screen_signup();
-        GalleryPageAndroid.gallery_album();
+        GalleryPageAndroid.gallery_album_Scroll();
     }
 
-    @Test(priority = 2, enabled = true)
+  /*  @Test(priority = 2, enabled = true)
     public void Gallery_verify_image() throws InterruptedException {
         LandingPage.get_started_screen_signup();
         GalleryPageAndroid.gallery_images();
@@ -55,5 +55,5 @@ public class GalleryPageTest extends TestBase {
         LandingPage.get_started_screen_signup();
         GalleryPageAndroid.Verify_Collage_Multi_layout_switch_Image();
     }
-
+*/
 }

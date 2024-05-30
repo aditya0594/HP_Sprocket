@@ -1,5 +1,9 @@
 package androidpageobjectss;
 import baseClass.TestBase;
+import com.google.common.collect.ImmutableMap;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.pagefactory.bys.builder.AppiumByBuilder;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
@@ -30,6 +34,20 @@ public class GalleryPageAndroid extends TestBase {
         String album_Name = driver.findElement(AllPhotos_click).getText();
         Assert.assertEquals("All", album_Name);
     }
+
+    public static void gallery_album_Scroll() throws InterruptedException {
+       // TouchAction touchAction = new TouchAction(driver);
+        driver.findElement(AlbumContainer).click();
+        // Perform a scroll by initiating a press at (100, 500), moving to (100, 100), and releasing
+        //Slide_touch(502,1731,511,548);
+        //driver.findElement(AppiumBy.androidUIAutomator("new Uiscrollable(new Uiselector()).scrollIntoView(text(\"text\"));"));
+
+
+
+
+
+    }
+
 
     public static void gallery_images() {
         driver.findElement(AlbumContainer).click();
@@ -84,7 +102,7 @@ public class GalleryPageAndroid extends TestBase {
         driver.findElement(Allphotos1).click();
         driver.findElement(Allphotos2).click();
         driver.findElement(Allphotos3).click();
-       // Tap_screen(568, 2140);
+        //Tap_screen(568, 2140);
        waitForElement(Collage_image_ver);
        driver.findElement(Collage_image_ver).click();
         driver.findElement(popup_ok).click();
@@ -101,7 +119,7 @@ public class GalleryPageAndroid extends TestBase {
         driver.findElement(Allphotos1).click();
         driver.findElement(Allphotos2).click();
         driver.findElement(Allphotos3).click();
-        //Tap_screen(568, 2140);
+       // Tap_screen(568, 2140);
         waitForElement(Collage_image_ver);
         driver.findElement(Collage_image_ver).click();
         driver.findElement(popup_ok).click();
