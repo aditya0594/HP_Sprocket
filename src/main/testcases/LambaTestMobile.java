@@ -2,37 +2,69 @@ package testcases;
 
 
 import baseClass.TestBase;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
-import static baseClass.TestBase.driver;
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LambaTestMobile extends TestBase {
 
     // TO install the appiu
 
 
+    public static void scrollToElementByTextUsingGesture(AndroidDriver<MobileElement> driver, String text) {
+        boolean isElementFound = false;
+
+        while (!isElementFound) {
+            try {
+                MobileElement element = driver.findElement(By.xpath("//*[contains(@text, '" + text + "')]"));
+                if (element.isDisplayed()) {
+                    isElementFound = true;
+                }
+            } catch (NoSuchElementException e) {
+                // Scroll down
+                Map<String, Object> params = new HashMap<>();
+                params.put("direction", "down");
+                params.put("percent", 0.8); // Scroll down 80% of the screen
+                ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", params);
+            }
+        }
+    }
+
+
+    public static void scrollToElementByText(AndroidDriver<MobileElement> driver, String text) {
+        driver.findElementByAndroidUIAutomator(
+                "new UiScrollable(new UiSelector().scrollable(true).instance(0))" +
+                        ".scrollIntoView(new UiSelector().text(\"" + text + "\").instance(0));"
+        );
+    }
+
+
 
 
    @Test
-           public void AndroidTest() throws MalformedURLException, InterruptedException {
+   public void AndroidTest() throws MalformedURLException, InterruptedException {
        // Android Test Scenario
-       executeAndroidScenario();
+       driver.findElement(By.id("com.android.permissioncontroller:id/continue_button")).click();
+       driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[2]")).click();
+       driver.findElement(By.id("android:id/button1")).click();
+       MobileElement element = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.ListView/android.widget.FrameLayout[5]/android.widget.LinearLayout/android.widget.Button[2]"));
+       scrollToElementByText(driver,"Dsms");
    }
 
     private static void executeAndroidScenario() throws MalformedURLException, InterruptedException {
 
-            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+            ///driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         driver.findElement(By.id("com.android.permissioncontroller:id/continue_button")).click();
         driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button[2]")).click();
         driver.findElement(By.id("android:id/button1")).click();

@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="appium setup 04-04-2024">
-      <change afterPath="$PROJECT_DIR$/app/SwipeListView Demo_v1.13_apkpure.com.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/proverbial_android.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/testcases/LambaTestMobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-08-2023_05_59_pm_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-08-2023_05_59_pm_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_14-08-2023_05_59_pm__Changes_.xml" beforeDir="false" />
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="appium setup 31-04-2024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chrome Latest Version/chromedriver_win.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Features/LandingPage.Feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Features/login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Runner/TestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/GalleryPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/GalleryPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LandingPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testcases/LoginStepDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/testcases/LambaTestMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/testcases/LambaTestMobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +72,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LambaTestMobile (3)">
+  <component name="RunManager" selected="TestNG.LambaTestMobile.AndroidTest">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP" />
       <shortenClasspath name="NONE" />
@@ -142,33 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambaTestMobile (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LambaTestMobile" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LambaTestMobile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP" />
       <shortenClasspath name="NONE" />
@@ -197,6 +151,33 @@
       </method>
     </configuration>
     <configuration name="LambaTestMobile (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LambaTestMobile" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LambaTestMobile (4)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -380,17 +361,17 @@
       <item itemvalue="TestNG.Classexecution" />
       <item itemvalue="TestNG.LambaTestMobile (2)" />
       <item itemvalue="TestNG.LambaTestMobile (3)" />
+      <item itemvalue="TestNG.LambaTestMobile (4)" />
       <item itemvalue="TestNG.LambaTestMobile" />
-      <item itemvalue="TestNG.LambaTestMobile (1)" />
       <item itemvalue="TestNG.LambaTestMobile.AndroidTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LambaTestMobile (3)" />
-        <item itemvalue="TestNG.LambaTestMobile (2)" />
-        <item itemvalue="TestNG.LambaTestMobile" />
         <item itemvalue="TestNG.LambaTestMobile.AndroidTest" />
-        <item itemvalue="TestNG.LambaTestMobile (1)" />
+        <item itemvalue="TestNG.LambaTestMobile (2)" />
+        <item itemvalue="TestNG.LambaTestMobile (4)" />
+        <item itemvalue="TestNG.LambaTestMobile (3)" />
+        <item itemvalue="TestNG.LambaTestMobile" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1712230770502</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="appium setup 31-04-2024">
+      <created>1717098185194</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717098185194</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +537,8 @@
     <MESSAGE value="Connectivity STA AP commit 05-06-2023" />
     <MESSAGE value="appium setup 24-02-2024" />
     <MESSAGE value="appium setup 04-04-2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="appium setup 04-04-2024" />
+    <MESSAGE value="appium setup 31-04-2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="appium setup 31-04-2024" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -33,12 +33,14 @@ public class CommonUtils {
     	caps.setCapability("platformName", platformName);
 		caps.setCapability("deviceName", deviceName);
 		//caps.setCapability("app", path+"//app//HP600AndMaintenanceRealeaseBuildDate.19.05.2022.apk");
-        caps.setCapability("app", path+"//app//SwipeListView Demo_v1.13_apkpure.com.apk");
+        //caps.setCapability("app", path+"//app//SwipeListView Demo_v1.13_apkpure.com.apk");
         //path+"//app//HP600AndMaintenanceRealeaseBuildDate.17.10.2022v2.82.7.apk"
 		caps.setCapability("autoGrantPermissions", true);
         caps.setCapability("fullReset", false);
         caps.setCapability("udid","RZ8NA1P2S8D");
-
+        // Set the app package and activity
+        caps.setCapability("appPackage", "com.fortysevendeg.android.swipelistview"); // Replace with your app's package name
+        caps.setCapability("appActivity", "sample.activities.SwipeListViewExampleActivity"); // Replace with your app's main activity
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), caps); //uri : http://127.0.0.1:4723/wd/hub
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
