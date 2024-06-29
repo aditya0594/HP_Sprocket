@@ -78,7 +78,7 @@ public class TestBase {
         //driver.closeApp();
     }
     public static By waitForElement(By element) {
-        WebDriverWait w = new WebDriverWait(driver, 3);
+        WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(3));
         w.until(ExpectedConditions.presenceOfElementLocated ((By) element));
         return element;
     }

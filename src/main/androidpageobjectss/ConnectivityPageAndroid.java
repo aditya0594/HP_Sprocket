@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import java.time.Duration;
 import java.util.List;
 
 public class ConnectivityPageAndroid extends TestBase {
@@ -98,7 +99,7 @@ public class ConnectivityPageAndroid extends TestBase {
     }
 
     private static void waitForLoaderToDisappear(AppiumDriver driver, By loaderLocator) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(loaderLocator));
     }
 
