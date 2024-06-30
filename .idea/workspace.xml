@@ -7,8 +7,6 @@
     <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="Working code : 30-06-2024">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LandingPageTest.login">
+  <component name="RunManager" selected="TestNG.LandingPageTest">
     <configuration name="Classexecution" type="TestNG">
       <module name="HP" />
       <shortenClasspath name="NONE" />
@@ -178,7 +176,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LambaTestMobile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LandingPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
@@ -190,7 +188,7 @@
       </extension>
       <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.LambaTestMobile" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
       <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="PARAMETERS" value="" />
@@ -361,19 +359,19 @@
       <item itemvalue="TestNG.testcases" />
       <item itemvalue="TestNG.&lt;default&gt;" />
       <item itemvalue="TestNG.Classexecution" />
+      <item itemvalue="TestNG.LandingPageTest" />
       <item itemvalue="TestNG.GalleryPageTest" />
       <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_album" />
       <item itemvalue="TestNG.LandingPageTest.Sign_up" />
       <item itemvalue="TestNG.LandingPageTest.login" />
-      <item itemvalue="TestNG.LambaTestMobile (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LandingPageTest" />
         <item itemvalue="TestNG.LandingPageTest.login" />
         <item itemvalue="TestNG.LandingPageTest.Sign_up" />
         <item itemvalue="TestNG.GalleryPageTest" />
         <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_album" />
-        <item itemvalue="TestNG.LambaTestMobile (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -512,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719731473415</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Working code : 30-06-2024">
+      <created>1719732919515</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719732919515</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
