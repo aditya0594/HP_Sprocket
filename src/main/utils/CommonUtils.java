@@ -4,18 +4,20 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
+import java.net.URI;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AutomationName;
-import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.remote.http.ClientConfig;
+import org.openqa.selenium.remote.http.HttpClient;
 
 public class CommonUtils {
 
@@ -26,7 +28,6 @@ public class CommonUtils {
 
     public void setup(String platformName, String deviceName, String uri) throws MalformedURLException {
 
-
         System.out.println("Session is creating");
 		path = System.getProperty("user.dir");
     	caps.setCapability("platformName", platformName);
@@ -36,9 +37,10 @@ public class CommonUtils {
 		caps.setCapability("autoGrantPermissions", "true");
         caps.setCapability("fullReset", "false");
         caps.setCapability("udid","RZ8NA1P2S8D");
-        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
+        caps.setCapability("automationName", "UiAutomator2");
+        //caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
         driver = new AppiumDriver(new URL(uri), caps); //uri : http://127.0.0.1:4723/wd/hub
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         // Hide the keyboard
         caps.setCapability("unicodeKeyboard", true);

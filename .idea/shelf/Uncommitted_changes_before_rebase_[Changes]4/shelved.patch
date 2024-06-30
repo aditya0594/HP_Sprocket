@@ -1,0 +1,325 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"fbed16bb-bade-4def-845d-b7f89224c886\" name=\"Changes\" comment=\"appium setup 04-04-2024\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2GJ08VZRbiIpIxmR77Xn26ofpcL\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Aditya Pawar\\IdeaProjects\\HP_Sprocket\\app\" />\r\n      <recent name=\"C:\\Users\\Aditya Pawar\\git\\HP_Sprocket\\HP_Sprocket\\app\" />\r\n      <recent name=\"C:\\Users\\Aditya Pawar\\git\\HP_Sprocket\\HP_Sprocket\\src\\main\" />\r\n      <recent name=\"C:\\Users\\Aditya Pawar\\git\\HP_Sprocket\\HP_Sprocket\" />\r\n      <recent name=\"C:\\Users\\Aditya Pawar\\git\\HP_Sprocket\\HP_Sprocket\\src\\resources\\app\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.GalleryPageTest\">\r\n    <configuration name=\"C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/testng.xml\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Classexecution\" type=\"TestNG\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcases.LandingPageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"DeleteUserPageTest.Delete_user\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcases.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcases.DeleteUserPageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"Delete_user\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GalleryPageTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcases.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcases.GalleryPageTest\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GalleryPageTest.Gallery_verify_album\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcases.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcases.GalleryPageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"Gallery_verify_album\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"GalleryPageTest.Gallery_verify_image\" type=\"TestNG\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcases.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcases.GalleryPageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"Gallery_verify_image\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"LandingPageTest.Sign_up\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcases.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcases.LandingPageTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"Sign_up\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestSuite \" type=\"TestNG\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"\" />\r\n      <option name=\"METHOD_NAME\" value=\"\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"&lt;default&gt;\" type=\"TestNG\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"\" />\r\n      <option name=\"METHOD_NAME\" value=\"\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"PACKAGE\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"C:\\Users\\Aditya Pawar\\git\\HP_Sprocket\\HP_Sprocket\\src\\resources\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"TestNG\">\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"testcases\" type=\"TestNG\" nameIsGenerated=\"true\">\r\n      <module name=\"HP_Sprocket\" />\r\n      <shortenClasspath name=\"NONE\" />\r\n      <useClassPathOnly />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcases.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\r\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"JavaSE-1.8\" />\r\n      <option name=\"SUITE_NAME\" value=\"\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"testcases\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"\" />\r\n      <option name=\"METHOD_NAME\" value=\"\" />\r\n      <option name=\"GROUP_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"PACKAGE\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"OUTPUT_DIRECTORY\" value=\"\" />\r\n      <option name=\"TEST_SEARCH_SCOPE\">\r\n        <value defaultName=\"moduleWithDependencies\" />\r\n      </option>\r\n      <option name=\"PROPERTIES_FILE\" value=\"\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <list>\r\n      <item itemvalue=\"TestNG.GalleryPageTest.Gallery_verify_image\" />\r\n      <item itemvalue=\"TestNG.TestSuite \" />\r\n      <item itemvalue=\"TestNG.testcases\" />\r\n      <item itemvalue=\"TestNG.&lt;default&gt;\" />\r\n      <item itemvalue=\"TestNG.Classexecution\" />\r\n      <item itemvalue=\"TestNG.GalleryPageTest\" />\r\n      <item itemvalue=\"TestNG.GalleryPageTest.Gallery_verify_album\" />\r\n      <item itemvalue=\"TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml\" />\r\n      <item itemvalue=\"TestNG.DeleteUserPageTest.Delete_user\" />\r\n      <item itemvalue=\"TestNG.LandingPageTest.Sign_up\" />\r\n    </list>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.GalleryPageTest\" />\r\n        <item itemvalue=\"TestNG.GalleryPageTest.Gallery_verify_album\" />\r\n        <item itemvalue=\"TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml\" />\r\n        <item itemvalue=\"TestNG.DeleteUserPageTest.Delete_user\" />\r\n        <item itemvalue=\"TestNG.LandingPageTest.Sign_up\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"fbed16bb-bade-4def-845d-b7f89224c886\" name=\"Changes\" comment=\"\" />\r\n      <created>1666076051325</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1666076051325</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"first commit\">\r\n      <created>1666076221252</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666076221252</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Setup of project\">\r\n      <created>1666092880518</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666092880518</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Signup module\">\r\n      <created>1666102106292</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1666102106292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"signup login completed\">\r\n      <created>1668949573850</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1668949573850</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"22-12-2022 commit\">\r\n      <created>1671709413843</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1671709413843</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Gallery page commit\">\r\n      <created>1681222750493</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681222750493</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Gallery page commit 24-04-2023\">\r\n      <created>1682339156474</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1682339156474</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"arranged commit 23-05-2023\">\r\n      <created>1684850359340</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684850359340</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"arranged commit 23-05-2023\">\r\n      <created>1684850456303</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1684850456303</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Connectivity STA AP commit 05-06-2023\">\r\n      <created>1685949309485</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1685949309485</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"appium setup 24-02-2024\">\r\n      <created>1708776899151</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1708776899151</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"appium setup 04-04-2024\">\r\n      <created>1712230661506</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712230661508</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"appium setup 04-04-2024\">\r\n      <created>1712230770502</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1712230770502</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/master\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"Branch\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"master\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"first commit\" />\r\n    <MESSAGE value=\"Setup of project\" />\r\n    <MESSAGE value=\"Signup module\" />\r\n    <MESSAGE value=\"signup loagin completed\" />\r\n    <MESSAGE value=\"signup login completed\" />\r\n    <MESSAGE value=\"22-12-2022 commit\" />\r\n    <MESSAGE value=\"Gallery page commit\" />\r\n    <MESSAGE value=\"Gallery page commit 24-04-2023\" />\r\n    <MESSAGE value=\"arranged commit 23-05-2023\" />\r\n    <MESSAGE value=\"Connectivity STA AP commit 05-06-2023\" />\r\n    <MESSAGE value=\"appium setup 24-02-2024\" />\r\n    <MESSAGE value=\"appium setup 04-04-2024\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"appium setup 04-04-2024\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.NoClassDefFoundError\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n    <watches-manager>\r\n      <configuration name=\"TestNG\">\r\n        <watch expression=\"Connectivity\" language=\"JAVA\" />\r\n      </configuration>\r\n    </watches-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f4b67208a8780355f24b0abc1cb2f8c2adf71de8)
++++ b/.idea/workspace.xml	(date 1719730182125)
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="appium setup 04-04-2024">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="fake" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -22,7 +20,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="Appium_HP" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -45,17 +43,17 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "last_opened_file_path": "C:/Users/Aditya Pawar/Downloads/projec/AppiumFrameworkDesign/AppiumFrameworkDesign",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\Aditya Pawar\IdeaProjects\HP_Sprocket\app" />
+@@ -65,19 +63,21 @@
+       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\resources\app" />
+     </key>
+     <key name="CopyClassDialog.RECENTS_KEY">
++      <recent name="testcases.testcases" />
+       <recent name="" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.GalleryPageTest">
+-    <configuration name="C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++  <component name="RunManager" selected="TestNG.LandingPageTest.login">
++    <configuration name="Classexecution" type="TestNG">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+-      <option name="PACKAGE_NAME" value="" />
+-      <option name="MAIN_CLASS_NAME" value="" />
++      <option name="SUITE_NAME" value="" />
++      <option name="PACKAGE_NAME" value="testcases" />
++      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
++      <option name="METHOD_NAME" value="" />
+       <option name="GROUP_NAME" value="" />
+-      <option name="TEST_OBJECT" value="SUITE" />
++      <option name="TEST_OBJECT" value="METHOD" />
+       <option name="PARAMETERS" value="" />
+       <option name="OUTPUT_DIRECTORY" value="" />
+       <option name="TEST_SEARCH_SCOPE">
+@@ -90,16 +90,21 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="Classexecution" type="TestNG">
+-      <module name="HP_Sprocket" />
++    <configuration name="GalleryPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="testcases.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
+       <option name="SUITE_NAME" value="" />
+       <option name="PACKAGE_NAME" value="testcases" />
+-      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+-      <option name="METHOD_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+       <option name="GROUP_NAME" value="" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <option name="PARAMETERS" value="" />
+       <option name="OUTPUT_DIRECTORY" value="" />
+       <option name="TEST_SEARCH_SCOPE">
+@@ -112,8 +117,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="DeleteUserPageTest.Delete_user" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++    <configuration name="GalleryPageTest.Gallery_verify_album" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <extension name="coverage">
+@@ -124,8 +129,8 @@
+       </extension>
+       <option name="SUITE_NAME" value="" />
+       <option name="PACKAGE_NAME" value="testcases" />
+-      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserPageTest" />
+-      <option name="METHOD_NAME" value="Delete_user" />
++      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
++      <option name="METHOD_NAME" value="Gallery_verify_album" />
+       <option name="GROUP_NAME" value="" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <option name="PARAMETERS" value="" />
+@@ -140,8 +145,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="GalleryPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++    <configuration name="GalleryPageTest.Gallery_verify_image" type="TestNG" nameIsGenerated="true">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <extension name="coverage">
+@@ -153,8 +158,9 @@
+       <option name="SUITE_NAME" value="" />
+       <option name="PACKAGE_NAME" value="testcases" />
+       <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
++      <option name="METHOD_NAME" value="Gallery_verify_image" />
+       <option name="GROUP_NAME" value="" />
+-      <option name="TEST_OBJECT" value="CLASS" />
++      <option name="TEST_OBJECT" value="METHOD" />
+       <option name="PARAMETERS" value="" />
+       <option name="OUTPUT_DIRECTORY" value="" />
+       <option name="TEST_SEARCH_SCOPE">
+@@ -167,8 +173,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="GalleryPageTest.Gallery_verify_album" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++    <configuration name="LambaTestMobile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <extension name="coverage">
+@@ -179,10 +185,9 @@
+       </extension>
+       <option name="SUITE_NAME" value="" />
+       <option name="PACKAGE_NAME" value="testcases" />
+-      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+-      <option name="METHOD_NAME" value="Gallery_verify_album" />
++      <option name="MAIN_CLASS_NAME" value="testcases.LambaTestMobile" />
+       <option name="GROUP_NAME" value="" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <option name="PARAMETERS" value="" />
+       <option name="OUTPUT_DIRECTORY" value="" />
+       <option name="TEST_SEARCH_SCOPE">
+@@ -195,8 +200,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="GalleryPageTest.Gallery_verify_image" type="TestNG" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++    <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <extension name="coverage">
+@@ -207,8 +212,8 @@
+       </extension>
+       <option name="SUITE_NAME" value="" />
+       <option name="PACKAGE_NAME" value="testcases" />
+-      <option name="MAIN_CLASS_NAME" value="testcases.GalleryPageTest" />
+-      <option name="METHOD_NAME" value="Gallery_verify_image" />
++      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
++      <option name="METHOD_NAME" value="Sign_up" />
+       <option name="GROUP_NAME" value="" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <option name="PARAMETERS" value="" />
+@@ -223,8 +228,8 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++    <configuration name="LandingPageTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <extension name="coverage">
+@@ -236,7 +241,7 @@
+       <option name="SUITE_NAME" value="" />
+       <option name="PACKAGE_NAME" value="testcases" />
+       <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+-      <option name="METHOD_NAME" value="Sign_up" />
++      <option name="METHOD_NAME" value="login" />
+       <option name="GROUP_NAME" value="" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <option name="PARAMETERS" value="" />
+@@ -252,7 +257,7 @@
+       </method>
+     </configuration>
+     <configuration name="TestSuite " type="TestNG">
+-      <module name="HP_Sprocket" />
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <option name="SUITE_NAME" value="" />
+@@ -274,7 +279,7 @@
+       </method>
+     </configuration>
+     <configuration name="&lt;default&gt;" type="TestNG">
+-      <module name="HP_Sprocket" />
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <option name="SUITE_NAME" value="" />
+@@ -316,7 +321,7 @@
+       </method>
+     </configuration>
+     <configuration name="testcases" type="TestNG" nameIsGenerated="true">
+-      <module name="HP_Sprocket" />
++      <module name="HP" />
+       <shortenClasspath name="NONE" />
+       <useClassPathOnly />
+       <extension name="coverage">
+@@ -353,17 +358,17 @@
+       <item itemvalue="TestNG.Classexecution" />
+       <item itemvalue="TestNG.GalleryPageTest" />
+       <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_album" />
+-      <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
+-      <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
+       <item itemvalue="TestNG.LandingPageTest.Sign_up" />
++      <item itemvalue="TestNG.LandingPageTest.login" />
++      <item itemvalue="TestNG.LambaTestMobile (2)" />
+     </list>
+     <recent_temporary>
+       <list>
++        <item itemvalue="TestNG.LandingPageTest.login" />
++        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
+         <item itemvalue="TestNG.GalleryPageTest" />
+         <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_album" />
+-        <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
+-        <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
+-        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
++        <item itemvalue="TestNG.LambaTestMobile (2)" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -467,7 +472,28 @@
+       <option name="project" value="LOCAL" />
+       <updated>1712230770502</updated>
+     </task>
+-    <option name="localTasksCounter" value="14" />
++    <task id="LOCAL-00014" summary="appium setup 31-04-2024">
++      <created>1717098185194</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1717098185194</updated>
++    </task>
++    <task id="LOCAL-00015" summary="Latest Appium code 30-06-2024">
++      <created>1719688079980</created>
++      <option name="number" value="00015" />
++      <option name="presentableId" value="LOCAL-00015" />
++      <option name="project" value="LOCAL" />
++      <updated>1719688079980</updated>
++    </task>
++    <task id="LOCAL-00016" summary="fake">
++      <created>1719730169599</created>
++      <option name="number" value="00016" />
++      <option name="presentableId" value="LOCAL-00016" />
++      <option name="project" value="LOCAL" />
++      <updated>1719730169599</updated>
++    </task>
++    <option name="localTasksCounter" value="17" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -481,7 +507,7 @@
+                   <entry key="branch">
+                     <value>
+                       <list>
+-                        <option value="origin/master" />
++                        <option value="origin/Converted_BDD" />
+                       </list>
+                     </value>
+                   </entry>
+@@ -522,7 +548,10 @@
+     <MESSAGE value="Connectivity STA AP commit 05-06-2023" />
+     <MESSAGE value="appium setup 24-02-2024" />
+     <MESSAGE value="appium setup 04-04-2024" />
+-    <option name="LAST_COMMIT_MESSAGE" value="appium setup 04-04-2024" />
++    <MESSAGE value="appium setup 31-04-2024" />
++    <MESSAGE value="Latest Appium code 30-06-2024" />
++    <MESSAGE value="fake" />
++    <option name="LAST_COMMIT_MESSAGE" value="fake" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
