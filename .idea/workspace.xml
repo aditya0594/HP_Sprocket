@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="appium setup 04-04-2024">
+    <list default="true" id="fbed16bb-bade-4def-845d-b7f89224c886" name="Changes" comment="fake">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/browserstack-plugin.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/browserstack-plugin.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/ConnectivityPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/androidpageobjectss/LandingPageAndroid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/ScreenBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/baseClass/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/utils/CommonUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Appium_HP" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +56,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Aditya Pawar/Downloads/projec/AppiumFrameworkDesign/AppiumFrameworkDesign&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -65,33 +72,13 @@
       <recent name="C:\Users\Aditya Pawar\git\HP_Sprocket\HP_Sprocket\src\resources\app" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="testcases.testcases" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GalleryPageTest">
-    <configuration name="C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.LandingPageTest.login">
     <configuration name="Classexecution" type="TestNG">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
@@ -112,36 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteUserPageTest.Delete_user" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="testcases" />
-      <option name="MAIN_CLASS_NAME" value="testcases.DeleteUserPageTest" />
-      <option name="METHOD_NAME" value="Delete_user" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GalleryPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -168,7 +127,7 @@
       </method>
     </configuration>
     <configuration name="GalleryPageTest.Gallery_verify_album" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -196,7 +155,7 @@
       </method>
     </configuration>
     <configuration name="GalleryPageTest.Gallery_verify_image" type="TestNG" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -223,8 +182,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LambaTestMobile (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LambaTestMobile" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LandingPageTest.Sign_up" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -251,8 +237,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LandingPageTest.login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="HP" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="testcases" />
+      <option name="MAIN_CLASS_NAME" value="testcases.LandingPageTest" />
+      <option name="METHOD_NAME" value="login" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestSuite " type="TestNG">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
@@ -274,7 +288,7 @@
       </method>
     </configuration>
     <configuration name="&lt;default&gt;" type="TestNG">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <option name="SUITE_NAME" value="" />
@@ -316,7 +330,7 @@
       </method>
     </configuration>
     <configuration name="testcases" type="TestNG" nameIsGenerated="true">
-      <module name="HP_Sprocket" />
+      <module name="HP" />
       <shortenClasspath name="NONE" />
       <useClassPathOnly />
       <extension name="coverage">
@@ -353,17 +367,17 @@
       <item itemvalue="TestNG.Classexecution" />
       <item itemvalue="TestNG.GalleryPageTest" />
       <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_album" />
-      <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
-      <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
       <item itemvalue="TestNG.LandingPageTest.Sign_up" />
+      <item itemvalue="TestNG.LandingPageTest.login" />
+      <item itemvalue="TestNG.LambaTestMobile (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LandingPageTest.login" />
+        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
         <item itemvalue="TestNG.GalleryPageTest" />
         <item itemvalue="TestNG.GalleryPageTest.Gallery_verify_album" />
-        <item itemvalue="TestNG.C:/Users/Aditya Pawar/IdeaProjects/HP_Sprocket/testng.xml" />
-        <item itemvalue="TestNG.DeleteUserPageTest.Delete_user" />
-        <item itemvalue="TestNG.LandingPageTest.Sign_up" />
+        <item itemvalue="TestNG.LambaTestMobile (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -467,7 +481,28 @@
       <option name="project" value="LOCAL" />
       <updated>1712230770502</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="appium setup 31-04-2024">
+      <created>1717098185194</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717098185194</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Latest Appium code 30-06-2024">
+      <created>1719688079980</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719688079980</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fake">
+      <created>1719730169599</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719730169599</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +516,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="origin/Converted_BDD" />
                       </list>
                     </value>
                   </entry>
@@ -522,7 +557,10 @@
     <MESSAGE value="Connectivity STA AP commit 05-06-2023" />
     <MESSAGE value="appium setup 24-02-2024" />
     <MESSAGE value="appium setup 04-04-2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="appium setup 04-04-2024" />
+    <MESSAGE value="appium setup 31-04-2024" />
+    <MESSAGE value="Latest Appium code 30-06-2024" />
+    <MESSAGE value="fake" />
+    <option name="LAST_COMMIT_MESSAGE" value="fake" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

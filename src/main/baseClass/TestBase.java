@@ -35,7 +35,7 @@ public class TestBase {
 
     @BeforeMethod
     public void setUp() throws MalformedURLException {
-        service = new AppiumServiceBuilder()
+       /* service = new AppiumServiceBuilder()
                         .withIPAddress("127.0.0.1") // Set IP address to 127.0.0.1
                         .usingPort(4723).build();// Set port to 4723
 
@@ -44,7 +44,7 @@ public class TestBase {
             System.out.println("Appium server started successfully.");
         } else {
             System.err.println("Failed to start Appium server.");
-        }
+        }*/
     	 //configuration items to change the look and feel
          //add content, manage tests etc
         System.out.println("Setup TestCase");

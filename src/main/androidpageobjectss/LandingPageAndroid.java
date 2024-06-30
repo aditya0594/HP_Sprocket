@@ -1,13 +1,9 @@
 package androidpageobjectss;
 
 import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 import java.util.Properties;
-
-import io.appium.java_client.android.AndroidKeyCode;
 import org.openqa.selenium.By;
-
 import baseClass.ScreenBase;
 import org.testng.Assert;
 import utils.CommonUtils;
@@ -364,12 +360,12 @@ public class LandingPageAndroid extends ScreenBase {
 
     public void recent_app() {
 
-        System.out.println(AndroidKeyCode.KEYCODE_BUTTON_THUMBL);
+       // System.out.println(AndroidKeyCode.KEYCODE_BUTTON_THUMBL);
     }
     
     public void exit_app() {
 
-        driver.closeApp();
+       // driver.closeApp();
     }
 }
 

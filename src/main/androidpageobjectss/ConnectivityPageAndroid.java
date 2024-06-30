@@ -2,9 +2,7 @@ package androidpageobjectss;
 
 import baseClass.TestBase;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
@@ -14,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
+import java.time.Duration;
 import java.util.List;
 
 public class ConnectivityPageAndroid extends TestBase {
@@ -59,14 +58,14 @@ public class ConnectivityPageAndroid extends TestBase {
 
     }
 
-    private static boolean waitForPrinterToBeFound(AndroidDriver<MobileElement> driver, By locator, int timeoutSeconds) {
+    private static boolean waitForPrinterToBeFound(AndroidDriver driver, By locator, int timeoutSeconds) {
         long startTime = System.currentTimeMillis();
         long timeoutMillis = timeoutSeconds * 1000;
         boolean printerFound = false;
 
         while (System.currentTimeMillis() - startTime < 9000) {
             try {
-                MobileElement printerElement = driver.findElement(locator);
+                WebElement printerElement = driver.findElement(locator);
                 if (printerElement.isDisplayed()) {
                     printerFound = true;
                     break;
@@ -88,7 +87,7 @@ public class ConnectivityPageAndroid extends TestBase {
 
     }
 
-    private static boolean isElementPresent(AppiumDriver<MobileElement> driver, By locator) {
+    private static boolean isElementPresent(AppiumDriver driver, By locator) {
         try {
             driver.findElement(locator);
             return true;
@@ -98,7 +97,7 @@ public class ConnectivityPageAndroid extends TestBase {
     }
 
     private static void waitForLoaderToDisappear(AppiumDriver driver, By loaderLocator) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(loaderLocator));
     }
 
@@ -215,7 +214,7 @@ public class ConnectivityPageAndroid extends TestBase {
     public void Connected_printer_listing_name_remove_600printer() throws InterruptedException {
 
         waitForElement(Manage_priter_to_be_HP600_remove);
-        Slide_touch(1065,509, 19, 498);
+       // Slide_touch(1065,509, 19, 498);
         driver.findElement(Manage_priter_afterRemove_printer_popup_OK_BTN).click();
     }
 
@@ -288,11 +287,11 @@ public class ConnectivityPageAndroid extends TestBase {
 
         waitForElement(printer_sign);
         // Locate the container element that holds the list of Wi-Fi networks
-        AndroidElement wifiListContainer = (AndroidElement) driver.findElement(By.className("android.widget.LinearLayout"));
+        WebElement wifiListContainer =  driver.findElement(By.className("android.widget.LinearLayout"));
         // Find all the Wi-Fi network elements within the container
-        List<MobileElement> wifiNetworks = wifiListContainer.findElements(By.className("android.widget.LinearLayout"));
+        List<WebElement> wifiNetworks = wifiListContainer.findElements(By.className("android.widget.LinearLayout"));
 
-        for (MobileElement wifiNetwork : wifiNetworks) {
+        for (WebElement wifiNetwork : wifiNetworks) {
             // Get the network name of each Wi-Fi network
             String networkName = wifiNetwork.getText();
             System.out.println("this is the output : " + networkName);

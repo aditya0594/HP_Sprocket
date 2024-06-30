@@ -8,12 +8,11 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -23,7 +22,7 @@ public class CommonUtils {
 
     DesiredCapabilities caps = new DesiredCapabilities();
     String path;
-    public AppiumDriver<MobileElement> driver;
+    public AppiumDriver driver;
 
     public void setup(String platformName, String deviceName, String uri) throws MalformedURLException {
 
@@ -38,7 +37,7 @@ public class CommonUtils {
         caps.setCapability("fullReset", "false");
         caps.setCapability("udid","RZ8NA1P2S8D");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ANDROID_UIAUTOMATOR2);
-        driver = new AndroidDriver<MobileElement>(new URL(uri), caps); //uri : http://127.0.0.1:4723/wd/hub
+        driver = new AppiumDriver(new URL(uri), caps); //uri : http://127.0.0.1:4723/wd/hub
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.MINUTES);
 
         // Hide the keyboard
